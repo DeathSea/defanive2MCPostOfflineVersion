@@ -1,0 +1,38 @@
+.floor {
+    width:739px;
+    background:#fff;
+    border-left: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e1e4e6;
+    overflow: auto;
+}
+
+
+
+.author {
+    width: 130px;
+    text-align: center;
+    padding: 15px 0;
+    float: left;
+}
+.author img{
+    width:80px;
+    height: 80px;
+}
+.post{
+    position: relative;
+    float:right;
+    width: 588px;
+    padding:0 0 8px 20px;
+}
+.post img{
+    max-width:570px
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+html,body,ul,div,{
+    margin:0;
+    padding:0;
+}
