@@ -1,0 +1,604 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="295.html">上一页</a>
+        <a href='291.html'>291</a><a href='292.html'>292</a><a href='293.html'>293</a><a href='294.html'>294</a><a href='295.html'>295</a>
+        <a href="#">296</a>
+        <a href='296.html'>296</a><a href='297.html'>297</a><a href='298.html'>298</a><a href='299.html'>299</a><a href='300.html'>300</a><a href='301.html'>301</a>
+        <a href="297.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这个按钮需要实现的电路功能：<br/>1、激活左边的发射器，点燃TNT矿车<br/>2、在正确延时一会后，激活右边的发射器，发射水，保护电路<br/>3、在爆炸发生前，打开发射舱的陷阱门，使得爆炸可以冲击到玩家<br/>4、再延时过一会后，重新给一个信号给右边的发射器，收回水<br/>按钮的电路相对来说要简单很多，只需要正确调整延时即可<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29902_0.jpg'></img></div>
+            <div class="post_floor">29902楼</div>
+            <div class="post_time">2014-07-09 22:03</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>首先把按钮的信号一路引下来<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29903_0.jpg'></img></div>
+            <div class="post_floor">29903楼</div>
+            <div class="post_time">2014-07-09 22:05</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>首先我们完成功能1<br/>很简单，只需要把信号给到装打火机的发射器即可<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29906_0.jpg'></img></div>
+            <div class="post_floor">29906楼</div>
+            <div class="post_time">2014-07-09 22:08</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来实现功能2<br/>将信号经过1tick的中继器之后，给到装水桶的发射器<br/>在鼠标所指的地方放上一个方块即可<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29907_0.jpg'></img></div>
+            <div class="post_floor">29907楼</div>
+            <div class="post_time">2014-07-09 22:10</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来实现功能3<br/>将按钮的信号延时4tick之后给到陷阱门旁边的方块上<br/>这样在爆炸的一瞬间陷阱门是打开的<br/>爆炸产生的动力就能够转移到玩家身上<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29909_0.jpg'></img></div>
+            <div class="post_floor">29909楼</div>
+            <div class="post_time">2014-07-09 22:13</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来最后一步就是完成功能4<br/>把按钮的信号连接5个4tick中继器给到水桶发射器上<br/>即可实现在发射结束后把水重新收回<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29914_0.jpg'></img></div>
+            <div class="post_floor">29914楼</div>
+            <div class="post_time">2014-07-09 22:22</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>按钮的电路就做好了！<br/>接下来只需要延长发射管，然后这样铺上陷阱门用于控制发射不偏移即可<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29917_0.jpg'></img></div>
+            <div class="post_floor">29917楼</div>
+            <div class="post_time">2014-07-09 22:24</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来根据发射强度延长发射管以及里面的陷阱门即可<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29924_0.jpg'></img></div>
+            <div class="post_floor">29924楼</div>
+            <div class="post_time">2014-07-09 22:33</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来我们脱下全身装备，用9个TNT矿车来进行一次测试吧！<br/>由于上面新的空间站还没有做<br/>而9个TNT矿车不可能达到旧的空间站的高度<br/>所以这次发射我们是为科学献身 = =<br/>不过在新空间站完工并且调整好TNT矿车数量之后<br/>去空间站就会很安全了<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29925_0.jpg'></img></div>
+            <div class="post_floor">29925楼</div>
+            <div class="post_time">2014-07-09 22:36</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>往发射器中填入9个TNT矿车<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29926_0.jpg'></img></div>
+            <div class="post_floor">29926楼</div>
+            <div class="post_time">2014-07-09 22:37</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>打开拉杆，可以听到TNT矿车被加载到铁轨上<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29927_0.jpg'></img></div>
+            <div class="post_floor">29927楼</div>
+            <div class="post_time">2014-07-09 22:37</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>关闭拉杆之后，可以看到TNT矿车已经到位了<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29928_0.jpg'></img></div>
+            <div class="post_floor">29928楼</div>
+            <div class="post_time">2014-07-09 22:38</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来我们进入发射舱，贴着两边的陷阱门<br/>按下按钮，就发射啦！<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29929_0.jpg'></img></div>
+            <div class="post_floor">29929楼</div>
+            <div class="post_time">2014-07-09 22:38</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>可以看到我们很成功的被发射到了一定高度<br/>由于9个TNT矿车数量还不算很多<br/>所以说发射高度有限<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29930_0.jpg'></img></div>
+            <div class="post_floor">29930楼</div>
+            <div class="post_time">2014-07-09 22:40</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>落地之后可以看到重新落到了发射点<br/>可见发射的精度还是很高的<br/>PS 在更大数量的TNT矿车发射下<br/>我们会需要把发射管延长，才能保证发射精度<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29932_0.jpg'></img></div>
+            <div class="post_floor">29932楼</div>
+            <div class="post_time">2014-07-09 22:41</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>在漏斗里我们取回了7个矿车以及9个TNT<br/>TNT总是可以保证不被破坏的，所有TNT都可以回收<br/>而矿车则会损失一小部分<br/>不过有了刷铁机之后，损失矿车也无所谓了<br/>更重要的TNT保住就好<br/>发射成本已经非常低了<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29933_0.jpg'></img></div>
+            <div class="post_floor">29933楼</div>
+            <div class="post_time">2014-07-09 22:43</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>好吧今天就播到这里了<br/>新的火箭发射站核心部分已经做好可以使用了<br/>还欠缺的只是外部装饰和空间站的建造<br/>相信不久就可以完成整个工程的建造，非常的赞！<br/>先播到这里了，大家88！<br/> <br/>——来自 MCLive
+<br/><img src='img/296_29934_0.jpg'></img></div>
+            <div class="post_floor">29934楼</div>
+            <div class="post_time">2014-07-09 22:46</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>刚刚网络持续爆炸了好一会<br/>一会看球，所以现在把自动应答给做了吧<br/>29563L，<font style='color:blue'>@ninzeroth</font>
+<br/> ：<br/>D大，如果有些重大跟新需要你跑很远（比如地牢）你会开新存档吗？<br/>暂时来说不会的。。虽然说生存到了后期资源充足，有些时候觉得没什么好做的，而前期发展非常有趣，玩腻了开新存档的确是个不错的主意。。但是这个存档里还有很多尚未完成的工程，除了大家观众很希望看到这些工程完工以为，我个人也很享受把一个工程从想法到实现的过程，现在就放下这个存档会留下太多遗憾。。另外一点是，除了未完成的旧工程以外，不少新工程（很多是已经完成了设计只待实施的）仍然在排期中，而如果新开存档的话不一定有足够的物资，需要发展得很后期才能继续这些想法<br/>很多人说物资太多了MC生活就没有什么意义了。。其实MC本来就是一个没有意义的游戏，只有你自己给自己设定了目标，玩MC的每一分钟才会有乐趣。。人生也是如此（此处省略一堆哲理废话）<br/>29583L，<font style='color:blue'>@黄猿光速无解</font>
+<br/> ：<br/>defanive，请问你对1.8的村民交易新机制有何看法，打算采取什么措施<br/>在1.8预览版刚进行村民修改的时候就研究过了，不知道还有多少研究的结果是仍然可用的，毕竟预览版每一版本都会有很大的变化。。不过的确是研究过的，有一些大致的想法和计划了。。新交易机制的话个人觉得更加放松了交易的限制，对比以前艰辛的刷无限纸，1.8中几乎任何交易都是无限交易了。。虽然说不少交易都被一定程度上的削弱了，不过总体来说村民交易感觉更好了。。还需等1.8出来之后再详细看吧</div>
+            <div class="post_floor">29945楼</div>
+            <div class="post_time">2014-07-10 03:33</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最近重新整理了一下无限射程TNT大炮的一些资料<br/>而得益于MCP 9.08的发布，写了MOD优化TNT爆炸<br/>成功的刷新了TNT大炮射程的世界纪录，达到了174.8km<br/>
+<br/><a href='http://tieba.baidu.com/p/3153457147'>http://tieba.baidu.com/p/3153457147</a>
+<br/>
+<br/><br/>里面有更详细的介绍以及存档下载<br/>电脑更好的同学不妨来破一下世界纪录哦</div>
+            <div class="post_floor">29946楼</div>
+            <div class="post_time">2014-07-10 03:35</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/296_30373_0.jpg'></img>
+<br/>经过一段时间断断续续的清理本帖的大部分水楼终于处理完了<br/>（当然楼中楼的回复没有清理，毕竟数量太多了）<br/>总共删掉了5040楼，也就是168页的水楼<br/>清理完之后帖子就只剩760页啦，减肥成功！<br/>完成以后就可以归还小吧权限了，以后靠一天15个删贴应该可以处理掉大部分的水<br/>希望大家不要在这个帖子里面水了，非常影响其他观众观看<br/>虽然我也希望这个帖子能有1000页，但是我更希望这1000页里面的回复都是认真用心的<br/>PS 今天下午的时候可能会直播</div>
+            <div class="post_floor">30373楼</div>
+            <div class="post_time">2014-07-30 08:40</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>到下午才直播的话，顺便问一下大家一个问题<br/>在比较复杂的工程建造时，建造过程要不要直播出来呢？<br/>直播：<br/>旧的工程有小黑塔、树场V3，比较新的有凋零造石机、炫富机等<br/>优点在于可以一步一步展示建造过程<br/>讲其中的建筑步骤，难点，注意事项等<br/>缺点在于建造过程直播时间比较长，并且直播内容相对比较少<br/>由于是在生存建筑中，很难有很好的角度截图讲解电路/原理<br/>由于建造时间长，可能要分两次直播才能够完成一个工程<br/>第一次直播建造过程，第二次进行详细的电路/原理讲解<br/>这样的话要到第一次直播结束才能看到成品，第二次直播结束才能了解到电路/原理<br/>不直播：<br/>旧的工程有刷怪塔生存者模式、END瞬移装置，新的工程有石英半砖转换器等<br/>优点在于直播开始时就可以看到成品，立即看到运行效果<br/>看完效果之后可以立即进行电路/原理的讲解，马上可以了解整个工程的核心思想<br/>缺点在于有点失去了直播的味道，和生存世界见面的时间也少了，更多的倾向了讲解<br/>而且无法看到建造过程<br/>当然啦，可以一边建造一边讲解的工程，例如最近的火箭发射站，肯定是会一边做一遍讲解的<br/>这个问题关注的时候建造过程比较长但又不是重复工作，而过程中又因为环境无法进行讲解的工程<br/>想看一下大家的想法，更喜欢哪一种直播方式<br/>个人的话，不直播建造过程可以自己提前做好工程，并且在一次直播中讲完整个工程<br/>直播的话，边直播边打字会影响建造速度<br/>但是两种直播方法对我影响都不大，看大家的喜好如何</div>
+            <div class="post_floor">30377楼</div>
+            <div class="post_time">2014-07-30 10:07</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>之前计划好了今天做一次大直播<br/>分成两段，下午的时候做一段，晚上再做第二段<br/>结果一整个下午都停电断网了，很可惜没办法直播<br/>虽然说晚上一次性把计划的直播完工程量会很大<br/>不过鉴于很久都没有直播了，今晚就加长版直播争取完成计划吧<br/>好吧，超长直播开始咯！<br/>Yaaay！<br/> <br/>——来自 MCLive
+<br/><img src='img/296_30426_0.jpg'></img></div>
+            <div class="post_floor">30426楼</div>
+            <div class="post_time">2014-07-30 20:17</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>首先是日常猪人塔的进度报告<br/>前两层已经彻底完成了！<br/>由于挡板也完成了浇筑，最后的第三和第四层工作量相对就少很多<br/>指日可待啦！<br/>目前猪人塔的刷怪速度没有仔细测量<br/>不过已经达到了杀完上一批收拾完金粒又要杀下一批的节奏<br/>感觉非常不错<br/> <br/>——来自 MCLive
+<br/><img src='img/296_30429_0.jpg'></img></div>
+            <div class="post_floor">30429楼</div>
+            <div class="post_time">2014-07-30 20:26</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>今天的大工程是什么呢？<br/>是期待已久的凋零塔啦！<br/>自从在1.6理清了地狱上方刷凋零骷髅的原理之后<br/>（原帖：tieba.baidu.com/p/2645948265）<br/>由于不确定1.7是否会继续存在，所以没有立即动工<br/>而1.7后由于MCP迟迟没有发布<br/>一直拖到现在才有机会开始这个工程<br/>前两天经过很多测试设计之后，终于确定了一个最终设计<br/>可以动工啦！<br/> <br/>——来自 MCLive
+<br/><img src='img/296_30433_0.jpg'></img></div>
+            <div class="post_floor">30433楼</div>
+            <div class="post_time">2014-07-30 20:31</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>得益于MCP 9.08的发布，现在可以在1.7.10上查看MC源码及写MOD了<br/>于是就写了1.7.10下的显示地狱堡垒列表MOD<br/>将生存世界复制一份并调成创造模式，用此MOD提供的指令/showfortress<br/>就可以显示出当前的地狱堡垒hashmap内容<br/>简单的来说，只有在hashmap顶端的第一个堡垒是可以在基岩上刷凋零骷髅的<br/>而顶端是哪个堡垒生存下不得而知，只能一个一个测试<br/>或者通过33x33chunk内孤立堡垒来保证堡垒是在顶端<br/>总之这个MOD只是为了方便找到堡垒而用的<br/>同样的目的纯生存中也可以实现，只不过不断测试相对耗时间而已<br/>晚点或者明天会单独开个帖子把这个MOD发出来<br/>具体在帖子里会有详细的介绍<br/> <br/>——来自 MCLive
+<br/><img src='img/296_30438_0.jpg'></img></div>
+            <div class="post_floor">30438楼</div>
+            <div class="post_time">2014-07-30 20:44</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>从上一张图的MOD里面可以看到处于顶端的堡垒是在<br/>(514,77)-(762,290)<br/>很久以前地狱基地有一条向上的楼梯去基岩层上杀凋零<br/>用箭+TNT的BUG打穿了基岩之后现在有一条直上的通道了<br/>接下来就往目标区域去吧！<br/>PS 这里只是临时交通，以后会做更好的交通系统<br/> <br/>——来自 MCLive
+<br/><img src='img/296_30440_0.jpg'></img></div>
+            <div class="post_floor">30440楼</div>
+            <div class="post_time">2014-07-30 20:51</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>上面的箱子装了大部分的红石物品<br/>耗资还算可以接受，毕竟是个刷怪塔嘛<br/>只是做粘性活塞的时候史莱姆球用完了<br/>又跑去沼泽刷了几个晚上<br/> <br/>——来自 MCLive
+<br/><img src='img/296_30447_0.jpg'></img></div>
+            <div class="post_floor">30447楼</div>
+            <div class="post_time">2014-07-30 20:57</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>下面就是建筑材料，同样也不算很大的耗资<br/>不知道石头够不够，27组是预估的<br/>玻璃的话是为了看起来更漂亮，可以看到里面的情况<br/> <br/>——来自 MCLive
+<br/><img src='img/296_30451_0.jpg'></img></div>
+            <div class="post_floor">30451楼</div>
+            <div class="post_time">2014-07-30 21:02</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>鉴于大家更偏向于建造过程和原理都直播的话<br/>凋零塔也就打算现做现讲啦<br/>具体的电路什么的还是要到创造里面讲才清晰<br/>不过在建的时候争取能够给大家一个清晰的结构概念<br/>我的凋零塔设计从上到下分为三个部分：刷怪，集中，过滤<br/>既然我们是从地面开始建起，那么就是先做过滤系统了<br/> <br/>——来自 MCLive
+<br/><img src='img/296_30456_0.jpg'></img></div>
+            <div class="post_floor">30456楼</div>
+            <div class="post_time">2014-07-30 21:06</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>过滤系统的目的是将凋零骷髅过滤出来，而其他怪物过滤掉<br/>整个过滤系统就被这个地狱门一分为二<br/>地狱门的右边是最终凋零骷髅的归属点<br/>被过滤出来的凋零骷髅会掉落到右边<br/>然后被活塞推入到地狱门里面，进入主世界<br/>而非凋零骷髅则会被过滤到左边，直接被推下来despawn<br/> <br/>——来自 MCLive
+<br/><img src='img/296_30460_0.jpg'></img></div>
+            <div class="post_floor">30460楼</div>
+            <div class="post_time">2014-07-30 21:12</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="295.html">上一页</a>
+        <a href='291.html'>291</a><a href='292.html'>292</a><a href='293.html'>293</a><a href='294.html'>294</a><a href='295.html'>295</a>
+        <a href="#">296</a>
+        <a href='296.html'>296</a><a href='297.html'>297</a><a href='298.html'>298</a><a href='299.html'>299</a><a href='300.html'>300</a><a href='301.html'>301</a>
+        <a href="297.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>

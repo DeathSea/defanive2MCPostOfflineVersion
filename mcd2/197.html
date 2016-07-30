@@ -1,0 +1,602 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="196.html">上一页</a>
+        <a href='192.html'>192</a><a href='193.html'>193</a><a href='194.html'>194</a><a href='195.html'>195</a><a href='196.html'>196</a>
+        <a href="#">197</a>
+        <a href='197.html'>197</a><a href='198.html'>198</a><a href='199.html'>199</a><a href='200.html'>200</a><a href='201.html'>201</a><a href='202.html'>202</a>
+        <a href="198.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这个就是1.5以前旧版的树场V3的底部结构了<br/>中央的泥土是种树的地方<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13810_0.jpg'></img></div>
+            <div class="post_floor">13810楼</div>
+            <div class="post_time">2013-03-19 07:44</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>把内部结构打开之后可以看到其实是这样的<br/>当树苗长成之后，木头作为实体方块就传送了中继器的信号<br/>进而熄灭了火把，把信号下传<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13811_0.jpg'></img></div>
+            <div class="post_floor">13811楼</div>
+            <div class="post_time">2013-03-19 07:46</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>打开了内部结构看其实是这样的<br/>平面横向用于树苗长成的检测<br/>平面纵向则是活塞和被推出的木头<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13812_0.jpg'></img></div>
+            <div class="post_floor">13812楼</div>
+            <div class="post_time">2013-03-19 07:49</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>但是要用到发射器的话似乎就杯具了<br/>平面内纵向肯定是无法腾出空间铺电路的<br/>横向左侧已经被发射器的电路占领了<br/>那么要判断树苗成长的电路应该铺设在哪里呢<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13813_0.jpg'></img></div>
+            <div class="post_floor">13813楼</div>
+            <div class="post_time">2013-03-19 07:54</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>如果尝试从下方获得信号进行判断的话<br/>似乎也走不通<br/>中继器可以给木头充能，但是下方距离2格的红石无法获得能量<br/>而泥土则是种树不可缺少的<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13814_0.jpg'></img></div>
+            <div class="post_floor">13814楼</div>
+            <div class="post_time">2013-03-19 07:58</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而如果要尝试用BUD进行检测的话<br/>似乎布线空间也不允许<br/>必须在1格高的空间内完成布线<br/>（似乎只能利用我设计的动力铁轨BUD来完成了）<br/>再者，考虑到种树有4个产生BUD的事件<br/>1、树苗被种下<br/>2、树苗长成树干<br/>3、树干被活塞推出<br/>4、活塞收回<br/>因此如果要做BUD进行检测的话<br/>必须要有一个4位计数器，因为我们只想检测2号事件<br/>这样看来BUD就太麻烦了<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13815_0.jpg'></img></div>
+            <div class="post_floor">13815楼</div>
+            <div class="post_time">2013-03-19 08:02</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这样看起来似乎布线非常杯具<br/>无法进行改造了<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13816_0.jpg'></img></div>
+            <div class="post_floor">13816楼</div>
+            <div class="post_time">2013-03-19 08:06</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这时候就要上我的电路设计了<br/>个人觉得非常巧妙<br/>在这里利用的是活塞BUD的特性<br/>活塞可以接受上方距离2格的信号<br/>例如途中活塞的正上方的铁块就被弱充能了<br/>但是，由于红石线只有2格的更新范围<br/>而红石线距离活塞有3格，因此没有更新到活塞<br/>活塞自然就无法意识到自己应该伸出<br/>产生了BUD的效应<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13817_0.jpg'></img></div>
+            <div class="post_floor">13817楼</div>
+            <div class="post_time">2013-03-19 08:09</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而给活塞提供了一次更新之后<br/>活塞就意识到了上方2格的铁块被弱充能了<br/>于是就伸出<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13818_0.jpg'></img></div>
+            <div class="post_floor">13818楼</div>
+            <div class="post_time">2013-03-19 08:11</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>同样的道理，当信号消失之后<br/>由于所有的方块都在2格的更新范围外<br/>因此活塞都无法被更新<br/>也就无法意识到信号已经消失了<br/>再次产生了BUD效应<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13819_0.jpg'></img></div>
+            <div class="post_floor">13819楼</div>
+            <div class="post_time">2013-03-19 08:11</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>此时任何一个更新都导致活塞意识到2格外的能量源已经消失了<br/>因此活塞就会后知后觉的收回<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13820_0.jpg'></img></div>
+            <div class="post_floor">13820楼</div>
+            <div class="post_time">2013-03-19 08:12</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>运用这个道理，可以设计出巧妙的电路<br/>感应树种长成树苗<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13821_0.jpg'></img></div>
+            <div class="post_floor">13821楼</div>
+            <div class="post_time">2013-03-19 08:14</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>树种长成树木之后，树木的底端被充能<br/>与之前演示的情况相同<br/>原木距离活塞上方2格<br/>此时活塞就产生了BUD效应<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13822_0.jpg'></img></div>
+            <div class="post_floor">13822楼</div>
+            <div class="post_time">2013-03-19 08:15</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>此时我们只需要给活塞提供一个适当的更新<br/>活塞就可以意识到树木已经长成了<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13823_0.jpg'></img></div>
+            <div class="post_floor">13823楼</div>
+            <div class="post_time">2013-03-19 08:16</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而当树木被处理之后<br/>此时活塞也形成了BUD效应<br/>上方的能源消失了，但是由于2格外的距离活塞无法意识到<br/>因此我们需要给一个适当的更新来让活塞复位<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13824_0.jpg'></img></div>
+            <div class="post_floor">13824楼</div>
+            <div class="post_time">2013-03-19 08:18</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>于是现在整个电路的重点就在于如何提供合理的更新<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13825_0.jpg'></img></div>
+            <div class="post_floor">13825楼</div>
+            <div class="post_time">2013-03-19 08:19</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>不过在考虑如何设计电路之前<br/>先了解一下这种高速脉冲发生器<br/>图中的玻璃需要换成实体方块<br/>在这里用玻璃只是方便大家观察而已<br/>在下方方块的4个面都插上红石火把，顶上放一个红石<br/>四个火把上分别放一个实体方块<br/>就可以产生高速稳定的脉冲<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13826_0.jpg'></img></div>
+            <div class="post_floor">13826楼</div>
+            <div class="post_time">2013-03-19 08:22</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>同样的，我们的发射器也需要一个高速的脉冲发射骨粉<br/>因此把这个脉冲做在下面<br/>并且把输出的信号引到发射器即可<br/>这样发射器就可以以最高速度发射骨粉了<br/>PS 这样的设计在1.5之前需要给发射器加一个稳定能源才可以使用<br/>发射器1.5更新之后变化挺大<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13827_0.jpg'></img></div>
+            <div class="post_floor">13827楼</div>
+            <div class="post_time">2013-03-19 08:24</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这个高速脉冲同时也引到活塞下方<br/>这样就给活塞提供持续稳定的更新<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13828_0.jpg'></img></div>
+            <div class="post_floor">13828楼</div>
+            <div class="post_time">2013-03-19 08:26</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而当发射器不断发射骨粉的时候<br/>树苗长成了树木，原木被充能，BUD效应产生<br/>同时高速脉冲也不断给活塞提供了更新<br/>因此在树苗长成的下1tick活塞就能够马上意识到树木长成了<br/>也就完成了检测树苗长成的难题<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13829_0.jpg'></img></div>
+            <div class="post_floor">13829楼</div>
+            <div class="post_time">2013-03-19 08:28</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来给活塞加上一个方块，前方如图简单布置电路<br/>这样当活塞意识到树木长成之后<br/>就会推出实体方块<br/>红石火把给实体方块充能，进而给红石线充能<br/>从而停止这个高速运转的脉冲<br/>非常巧妙的布线<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13830_0.jpg'></img></div>
+            <div class="post_floor">13830楼</div>
+            <div class="post_time">2013-03-19 08:30</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>当树木长成之后，结果就是这样<br/>脉冲停止工作了<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13831_0.jpg'></img></div>
+            <div class="post_floor">13831楼</div>
+            <div class="post_time">2013-03-19 08:30</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而接下来也很简单，把信号提供给各个树木的处理装置即可<br/>图中做演示就把信号引给了后方的处理活塞<br/>PS 实际上V3树场的处理系统是比较复杂的<br/>2个处理树叶和后方推树木的活塞电路组<br/>当然，信号都有了，只需要布线引给电路组的入口即可<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13832_0.jpg'></img></div>
+            <div class="post_floor">13832楼</div>
+            <div class="post_time">2013-03-19 08:34</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而这个时候就要处理产生的第二个BUD效应了<br/>虽然木头被处理了，上方的信号源也消失了<br/>但是下方的感应活塞无法接受到更新<br/>产生了BUD效应<br/>接下来就要提供一个适当的更新<br/>让活塞意识到已经处理完树木了<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13833_0.jpg'></img></div>
+            <div class="post_floor">13833楼</div>
+            <div class="post_time">2013-03-19 08:36</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>解法很简单，在此处放一个中继器并调整延时即可<br/>中继器延时之后给前方的红石线提供了能量<br/>改变了红石线的信号强度<br/>因此也就更新了活塞<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13834_0.jpg'></img></div>
+            <div class="post_floor">13834楼</div>
+            <div class="post_time">2013-03-19 08:37</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>在此设为2tick的中继器即可<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13835_0.jpg'></img></div>
+            <div class="post_floor">13835楼</div>
+            <div class="post_time">2013-03-19 08:38</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>因此整个机器感应的电路就完成了<br/>把同样的电路布置做给V3树场即可<br/>这个电路的布置十分巧妙<br/>个人非常满意自己的设计<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13836_0.jpg'></img></div>
+            <div class="post_floor">13836楼</div>
+            <div class="post_time">2013-03-19 08:39</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>把刚刚演示的电路合成到树场V3就可以了<br/>加仔细的装潢布置和封装就可以做到1.5版的树场V3<br/>左侧是总开关和玩家的站位<br/>打开开关之后玩家只需要一直按着鼠标右键放树苗<br/>就可以不断刷树苗刷木头了<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13837_0.jpg'></img></div>
+            <div class="post_floor">13837楼</div>
+            <div class="post_time">2013-03-19 08:42</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>来一张树场V3后方树叶处理和树干处理的电路<br/>上一次讲解过电路原理和信号顺序了<br/>根据原理和顺序不难做出<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13838_0.jpg'></img></div>
+            <div class="post_floor">13838楼</div>
+            <div class="post_time">2013-03-19 08:43</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这个就是今天直播的内容了<br/>树场V3升级1.5的设计<br/>至于树场V2，目测即使升级了效率也不会提高很多<br/>比V3快是肯定的，但是也快不了多少<br/>V2可以准备退役了<br/>PS 至于V1已经退役很久了<br/>PS PS 准备有时间的时候把一些废弃工程给拆了<br/>腾出空间做新的工程<br/>例如树场V1/V2，刷沙机，都可以拆了<br/> <br/>——来自 MCLive
+<br/><img src='img/197_13839_0.jpg'></img></div>
+            <div class="post_floor">13839楼</div>
+            <div class="post_time">2013-03-19 08:47</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="196.html">上一页</a>
+        <a href='192.html'>192</a><a href='193.html'>193</a><a href='194.html'>194</a><a href='195.html'>195</a><a href='196.html'>196</a>
+        <a href="#">197</a>
+        <a href='197.html'>197</a><a href='198.html'>198</a><a href='199.html'>199</a><a href='200.html'>200</a><a href='201.html'>201</a><a href='202.html'>202</a>
+        <a href="198.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,603 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="282.html">上一页</a>
+        <a href='278.html'>278</a><a href='279.html'>279</a><a href='280.html'>280</a><a href='281.html'>281</a><a href='282.html'>282</a>
+        <a href="#">283</a>
+        <a href='283.html'>283</a><a href='284.html'>284</a><a href='285.html'>285</a><a href='286.html'>286</a><a href='287.html'>287</a><a href='288.html'>288</a>
+        <a href="284.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而V5的另外一个不同点在于推树干的部分比普通设计更快<br/>推树干部分的电路时序非常简单<br/>不过在推的部分时，可以用瞬间推出电路，来进一步降低延迟<br/>第二步的推动可以使用瞬间推出电路来直接免除2tick<br/>只有1345步是有延迟的<br/>而4步时玩家已经可以再次放置树种了<br/>因此实际上推树干过程只等了第3步的推出和收回，总共4tick<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26236_0.jpg'></img></div>
+            <div class="post_floor">26236楼</div>
+            <div class="post_time">2014-02-23 17:01</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>说得简单，做起来就麻烦了<br/>如果看过我之前的瞬间推出电路教程的话<br/>印象很深刻的就是电路体积非常的大<br/>图中后面2x3的体积就只实现了前面一个活塞的瞬间推出<br/>而我们要实现一列活塞的瞬间推出<br/>电路要怎么布置？<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26237_0.jpg'></img></div>
+            <div class="post_floor">26237楼</div>
+            <div class="post_time">2014-02-23 17:03</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来就是我的电路设计了<br/>和任何激活一列活塞的方法一样，做半砖电路把信号往上传<br/>瞬间推出的原理就是给予一个0tick脉冲<br/>让活塞在推出的瞬间收回，这样方块就瞬间到位了<br/>因此要实现信号马上消失，信号源我们用一个活塞作为中介<br/>这样当活塞收到信号时，信号源就消失了<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26239_0.jpg'></img></div>
+            <div class="post_floor">26239楼</div>
+            <div class="post_time">2014-02-23 17:10</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>那电路这样设计不就行了吗？<br/>信号经过活塞之后依次向上，分别激活活塞<br/>这一列活塞都会开始推动方块<br/>接下来信号继续往下绕回来，给到下方的活塞<br/>瞬间切断了信号源，因此活塞瞬间开始拉回<br/>这样方块就瞬间到位了<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26240_0.jpg'></img></div>
+            <div class="post_floor">26240楼</div>
+            <div class="post_time">2014-02-23 17:12</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>但是事实证明是不行的<br/>更新机制是由一个表进行管理的<br/>而表的排序在没有先后顺序时（红石线是同时激活的自然没有先后顺序）<br/>会把更新安装hash值进行排序<br/>而hash值我们是没法控制的，因此自然也没法控制哪个活塞最先被更新<br/>这个活塞电路甚至会因为在不同的坐标会有不同的推出效果<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26241_0.jpg'></img></div>
+            <div class="post_floor">26241楼</div>
+            <div class="post_time">2014-02-23 17:15</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而解决方法就是再加一个活塞进行缓冲<br/>这样前方一列的活塞和上方的活塞都会在同一优先级内激活<br/>上方活塞激活后才会让下方的活塞激活<br/>此时下方活塞有一个较后的优先级<br/>因此只有高优先级的全部活塞都激活完了<br/>低优先级的下方活塞才会激活并切断信号<br/>实现了瞬间推出<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26242_0.jpg'></img></div>
+            <div class="post_floor">26242楼</div>
+            <div class="post_time">2014-02-23 17:21</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>有了瞬间推出的实现方法了的话<br/>我们现在来看看木头处理的电路<br/>在这里使用简单的方法检测是否有实体方块，也就是树木长成<br/>当然实际树场V5中是使用活塞BUD感应的<br/>具体的感应电路可以参考V3的树场讲解<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26246_0.jpg'></img></div>
+            <div class="post_floor">26246楼</div>
+            <div class="post_time">2014-02-23 17:29</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>感应到树木长成之后，信号分成3支<br/>第二条信号可以看到是给到之前的瞬间推出活塞处的，延迟1tick<br/>第一条信号是给到瞬间推出完成之后前面一列活塞的推出<br/>由于后面一列活塞的推出是瞬间的，因此前面一列活塞推出不需要延迟，同样是延迟1tick<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26248_0.jpg'></img></div>
+            <div class="post_floor">26248楼</div>
+            <div class="post_time">2014-02-23 17:32</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>第三条电路是实现拉回前面一列活塞的<br/>延迟3tick之后给信号到后面一列活塞即可<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26249_0.jpg'></img></div>
+            <div class="post_floor">26249楼</div>
+            <div class="post_time">2014-02-23 17:33</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>现在进行测试的话可以看到，放下方块之后激活了信号<br/>后面一列活塞立即把前面一列活塞推到位<br/>前面一列活塞到位之后就立即开始推了<br/>实现了非常迅速的树木处理<br/>PS 这里用一个中继器其实是为了保证信号长度至少有2tick<br/>而在实际活塞BUD感应中信号长度总是大于2tick的<br/>因此这里的电路并没有实际树场的快<br/>实际树场还要比这个电路快1tick<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26252_0.jpg'></img></div>
+            <div class="post_floor">26252楼</div>
+            <div class="post_time">2014-02-23 17:36</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>推出树干的部分讲完了，接下来原木被收集的部分也是一个设计难点<br/>白桦树最高可以长到7格高<br/>既然不想把效率浪费在处理成2x3的话<br/>那么用黑色凋零骷髅头的方法，7格高就得分送给4个凋零才能处理<br/>而4个凋零的成本毕竟还是挺高的<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26259_0.jpg'></img></div>
+            <div class="post_floor">26259楼</div>
+            <div class="post_time">2014-02-23 17:41</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>因此V5的设计没有使用黑色骷髅头的破坏方法<br/>看过之前凋零讲解的直播的话，大家应该知道<br/>凋零在受伤时会吃掉自己身边3x3x4区域内的方块<br/>因此我们使用这个进行原木的破坏<br/>这样可以最多处理4格高的树干<br/>因此只需2个凋零就可以处理完了<br/>PS 实际上即使1个凋零也可以跟上树场的速度<br/>但是1个凋零的话就得花时间把7格高的原木重组<br/>反而降低了树场的速度<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26265_0.jpg'></img></div>
+            <div class="post_floor">26265楼</div>
+            <div class="post_time">2014-02-23 17:47</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>和黑曜石机非常类似，采用上面的一个装置伤害凋零<br/>原木必须被推到凋零后面以免影响两侧头的视线<br/>这样当原木被推进去之后<br/>凋零受伤就会把原木吃掉，掉落成物品<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26268_0.jpg'></img></div>
+            <div class="post_floor">26268楼</div>
+            <div class="post_time">2014-02-23 17:49</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>但是掉落物品的收集倒是很麻烦<br/>由于原木是在凋零身后被破坏的<br/>因此只会掉落到凋零身后的3x2区域<br/>后面的2格地板可以换成漏斗收集物品<br/>但是凋零脚下的地板就不能换了（详见之前的凋零讲解）<br/>而且掉在石栅栏上的物品又要怎么收集呢<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26281_0.jpg'></img></div>
+            <div class="post_floor">26281楼</div>
+            <div class="post_time">2014-02-23 18:27</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>之前黑曜石机也遇到了类似的问题<br/>解决方法就是在地板和石栅栏中嵌入漏斗矿车，成效不错<br/>但是1.7更新后，即使在水中的爆炸也会对实体产生伤害了（但是仍然不能破坏方块）<br/>因此如果在召唤凋零前就把矿车嵌入的话<br/>凋零召唤后的爆炸就会把矿车破坏掉<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26282_0.jpg'></img></div>
+            <div class="post_floor">26282楼</div>
+            <div class="post_time">2014-02-23 18:29</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>但是现在凋零都召唤出来了，要怎么样才可以把矿车嵌入进去？<br/>肯定不能用活塞推矿车进去的<br/>活塞只能把方块强行推进实体中<br/>而不能把实体强行推进方块中<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26284_0.jpg'></img></div>
+            <div class="post_floor">26284楼</div>
+            <div class="post_time">2014-02-23 18:31</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>我的解决方案是<br/>先召唤凋零并且爆炸完毕之后把第3格凋零围起来<br/>这个时候就可以把脚下旁边的方块拆了方便工作<br/>但是脚下的方块仍然不能拆或者移动，不然凋零就可以走开了<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26286_0.jpg'></img></div>
+            <div class="post_floor">26286楼</div>
+            <div class="post_time">2014-02-23 18:33</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来把凋零脚下方块的下方拆掉<br/>然后如图铺上一个铁轨<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26287_0.jpg'></img></div>
+            <div class="post_floor">26287楼</div>
+            <div class="post_time">2014-02-23 18:34</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>然后接下来把脚下方块下方的铁轨拆掉<br/>重新填满方块<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26289_0.jpg'></img></div>
+            <div class="post_floor">26289楼</div>
+            <div class="post_time">2014-02-23 18:35</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来放矿车就可以把矿车推进实体方块中了<br/>这是一个比较少用的BUG<br/>原理是矿车碰到转角铁轨之后就立即变成了45度朝向<br/>进入了方块的碰撞箱，因此就穿过方块了<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26291_0.jpg'></img></div>
+            <div class="post_floor">26291楼</div>
+            <div class="post_time">2014-02-23 18:36</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来就可以把石栅栏重新填上了<br/>成功实现了在不移动一个方块的情况下把漏斗矿车推进去<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26292_0.jpg'></img></div>
+            <div class="post_floor">26292楼</div>
+            <div class="post_time">2014-02-23 18:37</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来下一步就是给后面的石栅栏嵌入矿车<br/>由于不是凋零的落脚方块，因此嵌入到石栅栏里面相对简单<br/>可以直接把石栅栏拆掉，推入矿车<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26293_0.jpg'></img></div>
+            <div class="post_floor">26293楼</div>
+            <div class="post_time">2014-02-23 18:39</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来把铁轨拆掉，用活塞把石栅栏推回去即可<br/>这样我们就实现了把2个收集盲点嵌入了漏斗矿车<br/>PS 这部分是我和繁华一起实验设计的<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26294_0.jpg'></img></div>
+            <div class="post_floor">26294楼</div>
+            <div class="post_time">2014-02-23 18:40</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来把漏斗都放好，导入一个侧流的水流<br/>就实现了收集全部的掉落木头了<br/>PS 为什么是要侧流的水流呢？<br/>漏斗矿车的吸物品范围不是居中的，而是有一定的位移偏差<br/>导致了即使在脚下方块和石栅栏里嵌入漏斗矿车也仍然有收集盲点<br/>用侧冲的水流可以保证即使物品掉落在了盲点区中<br/>也会被侧向冲到非盲点区被收集到<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26296_0.jpg'></img></div>
+            <div class="post_floor">26296楼</div>
+            <div class="post_time">2014-02-23 18:43</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>因此整个树场V5的设计就是这样了<br/>能够达到每小时17000原木的速度非常满意<br/>在设计的时候达到了这个速度也让我非常惊讶<br/>（毕竟6000到17000是一个很大的跳跃）<br/>当然啦，V5里面还有一些小的电路组成没有讲<br/>例如向上传骨粉，树叶处理等<br/>不过这些电路有基础的同学应该都可以很容易的做出来<br/>总之V5非常满意<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26301_0.jpg'></img></div>
+            <div class="post_floor">26301楼</div>
+            <div class="post_time">2014-02-23 18:48</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>刚升级到1.7还有不少东西值得把玩<br/>而且在这个工程后还有几个非常大的工程<br/>一升级突然就感觉有很多可做的东西了！<br/>（当然也还有一大堆排期的工程，仍然在排期。。）<br/>不管怎么说，今天就直播到这里了<br/>R.I.P V4<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26306_0.jpg'></img></div>
+            <div class="post_floor">26306楼</div>
+            <div class="post_time">2014-02-23 18:53</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>上期直播后的一些观众讨论：<br/>25415L <font style='color:blue'>@ppsspp赛</font>
+<br/> ：<br/>我想问的问题是lz能把地图文件分享出来吗？在红石电路吧有一群人在试图复原你的地图，复原嘛，很辛苦的！为什么你不能分享一下你的地图呢？难道这违背了什么社区精神了吗？还是地图文件里有什么不可告人的作弊痕迹？<br/>我个人的观念是这个存档是“我的”世界，自然也是相对有点私密性的东西。可以想成是作业本，给别人看看也没什么大不了的，但是更倾向于不分享。另外一点是虽然我的存档不是几个G那么大，不过也有600多M，每过一段时间更新分享就要上传这么大的文件，而且在国外访问国内网速这么慢的情况下，600M实在是非常痛苦<br/>做直播的原意就是大家除了能看到结果，也同时通过我的叙述能看到过程，而我个人认为过程比结果更加重要。不少复原我地图的帖子我都看过了，很多都复原得很接近，这更加说明了其实只要认真看帖子大家都可以做出同样的东西，并且更重要的是还同时理解了其设计<br/>25541L <font style='color:blue'>@喂养野兽</font>
+<br/> ：<br/>很想知道D大为什么不去玩mod，原版接受的内容应该有限，玩mod应该能学习到更多新东西<br/>其实也是个个人喜好问题，我也玩过不少的MOD，但是都没有非常深入的去玩<br/>另外一点是MOD更新总会比原版滞后几个星期甚至几个月，对于我这种毫无耐心的人来说看到原版新功能但是不能玩简直悲伤。。。</div>
+            <div class="post_floor">26309楼</div>
+            <div class="post_time">2014-02-23 19:09</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>好久没玩MC了，今天来直播一会<br/>PS 最近开始玩LOL了，室友带我入坑的<br/>然后发现不少认识的人其实都玩<br/>在美服，渣渣一枚，觉得无聊可以来和我黑一局<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26690_0.jpg'></img></div>
+            <div class="post_floor">26690楼</div>
+            <div class="post_time">2014-03-17 22:32</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>今天呢也不打算进行什么十分大的工程<br/>就当休闲娱乐一下吧<br/>家里装潢给我的感觉稍微有点看腻了<br/>借此机会来改一下吧<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26691_0.jpg'></img></div>
+            <div class="post_floor">26691楼</div>
+            <div class="post_time">2014-03-17 22:38</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>改完之后，感觉有没有好看一点？<br/>PS 神网速发了好久都发不出去<br/> <br/>——来自 MCLive
+<br/><img src='img/283_26699_0.jpg'></img></div>
+            <div class="post_floor">26699楼</div>
+            <div class="post_time">2014-03-17 22:52</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="282.html">上一页</a>
+        <a href='278.html'>278</a><a href='279.html'>279</a><a href='280.html'>280</a><a href='281.html'>281</a><a href='282.html'>282</a>
+        <a href="#">283</a>
+        <a href='283.html'>283</a><a href='284.html'>284</a><a href='285.html'>285</a><a href='286.html'>286</a><a href='287.html'>287</a><a href='288.html'>288</a>
+        <a href="284.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>

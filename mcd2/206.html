@@ -1,0 +1,602 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="205.html">上一页</a>
+        <a href='201.html'>201</a><a href='202.html'>202</a><a href='203.html'>203</a><a href='204.html'>204</a><a href='205.html'>205</a>
+        <a href="#">206</a>
+        <a href='206.html'>206</a><a href='207.html'>207</a><a href='208.html'>208</a><a href='209.html'>209</a><a href='210.html'>210</a><a href='211.html'>211</a>
+        <a href="207.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来就要把信号传给后方的3个活塞<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14394_0.jpg'></img></div>
+            <div class="post_floor">14394楼</div>
+            <div class="post_time">2013-03-29 10:27</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最简单的同时控制3个活塞的方法<br/>就是利用如此的结构<br/>不足之处在于受红石火把拖累，有1tick的延迟<br/>不过在此无伤大雅<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14395_0.jpg'></img></div>
+            <div class="post_floor">14395楼</div>
+            <div class="post_time">2013-03-29 10:28</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来做这样一个结构<br/>这样的结构可以做出不对称的电路延时<br/>OFF->ON时，红石火把立即收到充能<br/>而在ON->OFF时，需要经过2tick才失去充能<br/>因此就做出了不对称的延时<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14396_0.jpg'></img></div>
+            <div class="post_floor">14396楼</div>
+            <div class="post_time">2013-03-29 10:37</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>好吧刚刚一直把活塞的位置放错了<br/>正确的位置应该如下<br/>不过后面电路布置的原理都是一样的<br/>只不过改变了一下位置而已<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14397_0.jpg'></img></div>
+            <div class="post_floor">14397楼</div>
+            <div class="post_time">2013-03-29 10:41</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>后面的电路可以稍作修改成这样<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14398_0.jpg'></img></div>
+            <div class="post_floor">14398楼</div>
+            <div class="post_time">2013-03-29 10:42</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来把信号给到一个zero edge detector<br/>其实就是双边缘检测器<br/>每次电路信号发生改变时<br/>无论是OFF->ON还是ON->OFF<br/>双边缘检测器都会发出一个脉冲信号<br/>而这个活塞式的双边缘检测器，发出的信号是1tick<br/>正好符合我们的需要，而且延时非常小<br/>其工作原理就是利用实体方块会切断电路的原理<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14399_0.jpg'></img></div>
+            <div class="post_floor">14399楼</div>
+            <div class="post_time">2013-03-29 10:45</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来就可以把信号最后接到右侧的活塞了<br/>这样也可以同时控制3个活塞，利用了BUD的效果<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14400_0.jpg'></img></div>
+            <div class="post_floor">14400楼</div>
+            <div class="post_time">2013-03-29 10:46</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>于是整个电路就完成了<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14401_0.jpg'></img></div>
+            <div class="post_floor">14401楼</div>
+            <div class="post_time">2013-03-29 10:46</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>踩上去一次，打开墙面，露出熔炉<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14402_0.jpg'></img></div>
+            <div class="post_floor">14402楼</div>
+            <div class="post_time">2013-03-29 10:47</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>再踩上一次，关闭墙面，隐藏熔炉<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14403_0.jpg'></img></div>
+            <div class="post_floor">14403楼</div>
+            <div class="post_time">2013-03-29 10:48</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最后封闭一下就成这样了<br/>没用外露的电路，非常美观<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14404_0.jpg'></img></div>
+            <div class="post_floor">14404楼</div>
+            <div class="post_time">2013-03-29 10:48</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>打开之后<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14405_0.jpg'></img></div>
+            <div class="post_floor">14405楼</div>
+            <div class="post_time">2013-03-29 10:48</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而实际在我生存里面布置电路的时候<br/>就遇到了一堆的麻烦<br/>右侧是垃圾桶的电路<br/>左侧遇到了刷铁机的水流运输<br/>而上方则有地面路灯的电路<br/>电路也进行了大修改才能放下<br/>花费了非常多的时间在布置这个电路上<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14406_0.jpg'></img></div>
+            <div class="post_floor">14406楼</div>
+            <div class="post_time">2013-03-29 10:51</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>不过值得庆祝的是，最后的结果非常满意<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14407_0.jpg'></img></div>
+            <div class="post_floor">14407楼</div>
+            <div class="post_time">2013-03-29 10:52</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>当然，下面的dropper自然是作为燃料储存的地方<br/>dropper显示成fuel是怎么做到的呢<br/>其实把dropper方块放入anvil中改名即可<br/>同理也可以运用到任何有GUI+名称的方块上<br/>例如箱子、发射器、熔炉等等<br/>PS 改名之后，这些方块一旦放下<br/>再挖起来的时候名字就消失了<br/>而每次改名需要消费LV5<br/>所以说还是要慎重使用<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14408_0.jpg'></img></div>
+            <div class="post_floor">14408楼</div>
+            <div class="post_time">2013-03-29 10:54</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>至此，储存室的各种电路设施算是完美布置好了<br/>个人对这几个工程最后的效果都非常满意<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14409_0.jpg'></img></div>
+            <div class="post_floor">14409楼</div>
+            <div class="post_time">2013-03-29 10:57</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>说到1.5的更新<br/>居然忘记介绍这个了<br/>3个雪块可以合成6块雪片了！<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14410_0.jpg'></img></div>
+            <div class="post_floor">14410楼</div>
+            <div class="post_time">2013-03-29 11:05</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>我们知道，用铲子铲1个雪片可以得到1个雪球<br/>而4个雪球可以合成一个雪块<br/>因此通过雪块合成雪片，我们浪费了一半的雪<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14411_0.jpg'></img></div>
+            <div class="post_floor">14411楼</div>
+            <div class="post_time">2013-03-29 11:08</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>右键在地上放下雪片之后<br/>继续对着雪片右键放雪片可以堆叠起来<br/>一个雪片是1/8的高度<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14413_0.jpg'></img></div>
+            <div class="post_floor">14413楼</div>
+            <div class="post_time">2013-03-29 11:10</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>但是值得注意的是，最上层的雪片并不占高度<br/>图中可以看到虽然我们站在1/8的雪块上<br/>但是我们的y值仍然是4<br/>再例如，5个雪片合成的5/8雪块<br/>实际上只有4/8个雪块的高度<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14414_0.jpg'></img></div>
+            <div class="post_floor">14414楼</div>
+            <div class="post_time">2013-03-29 11:11</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>也就是说，由8个雪片堆叠起来的8/8雪块<br/>实际上只有7/8的高度<br/>而一个由4个雪球合成的雪块，则是占1格的高度<br/>因此虽然这2种方块看起来毫无差别<br/>但是实际上还是有高度差异的<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14415_0.jpg'></img></div>
+            <div class="post_floor">14415楼</div>
+            <div class="post_time">2013-03-29 11:14</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>如图拿着红石粉对着玻璃右键<br/>就可以在8/8雪块上放红石粉<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14416_0.jpg'></img></div>
+            <div class="post_floor">14416楼</div>
+            <div class="post_time">2013-03-29 11:16</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>由于8/8雪块并不是实体方块<br/>因此有着和倒置的半砖、萤石等类似的红石性质<br/>也就是可以向上传输信号，但是无法下传信号<br/>考虑到8/8雪块无法浮空放置等问题<br/>实际上还是倒置的半砖在这方面比较有实用性<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14417_0.jpg'></img></div>
+            <div class="post_floor">14417楼</div>
+            <div class="post_time">2013-03-29 11:18</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最近才发现了optifine有一个connected textures的选项<br/>可以把一些方块的材质拼合在一起<br/>例如玻璃就可以做成这样<br/>看起来非常漂亮<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14418_0.jpg'></img></div>
+            <div class="post_floor">14418楼</div>
+            <div class="post_time">2013-03-29 11:23</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>玻璃片也可以连接在一起<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14419_0.jpg'></img></div>
+            <div class="post_floor">14419楼</div>
+            <div class="post_time">2013-03-29 11:24</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>好吧，今天暂时玩到这里了<br/>睡觉去<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14420_0.jpg'></img></div>
+            <div class="post_floor">14420楼</div>
+            <div class="post_time">2013-03-29 11:25</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>今天继续打MC吧！<br/>经过几天对储存室的修改，总算是差不多完工了<br/>那么今天就要开工做下一个大工程了<br/>村民计划！<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14446_0.jpg'></img></div>
+            <div class="post_floor">14446楼</div>
+            <div class="post_time">2013-03-30 05:52</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>一直以来都有开做这个计划的想法<br/>不过鉴于各种工程，一直被推后了<br/>前几个星期看到panda4994在U2B上的生存视频<br/>最后决定必须要开工了！<br/>造6组鹅卵石半阶<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14447_0.jpg'></img></div>
+            <div class="post_floor">14447楼</div>
+            <div class="post_time">2013-03-30 05:55</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>不过出发前先去END附魔6把铲子用<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14448_0.jpg'></img></div>
+            <div class="post_floor">14448楼</div>
+            <div class="post_time">2013-03-30 05:59</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>其实村民计划的目的很简单，就是为了交易<br/>注意到，钻石，萤石，红石等物品是不可再生的<br/>也就是说，如果不继续探索地图<br/>那么有朝一日全部的钻石就会用光<br/>而村民交易则是可以再生的<br/>因此村民计划也就是利用交易系统把各种钻石制具变为可再生<br/> <br/>——来自 MCLive
+<br/><img src='img/206_14449_0.jpg'></img></div>
+            <div class="post_floor">14449楼</div>
+            <div class="post_time">2013-03-30 06:02</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="205.html">上一页</a>
+        <a href='201.html'>201</a><a href='202.html'>202</a><a href='203.html'>203</a><a href='204.html'>204</a><a href='205.html'>205</a>
+        <a href="#">206</a>
+        <a href='206.html'>206</a><a href='207.html'>207</a><a href='208.html'>208</a><a href='209.html'>209</a><a href='210.html'>210</a><a href='211.html'>211</a>
+        <a href="207.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>

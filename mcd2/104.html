@@ -1,0 +1,600 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="103.html">上一页</a>
+        <a href='99.html'>99</a><a href='100.html'>100</a><a href='101.html'>101</a><a href='102.html'>102</a><a href='103.html'>103</a>
+        <a href="#">104</a>
+        <a href='104.html'>104</a><a href='105.html'>105</a><a href='106.html'>106</a><a href='107.html'>107</a><a href='108.html'>108</a><a href='109.html'>109</a>
+        <a href="105.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6435_0.jpg'></img>
+<br/>接下来BUD的中间状态的输出，我们连接到左推和右推的活塞组</div>
+            <div class="post_floor">6435楼</div>
+            <div class="post_time">2012-09-15 14:11</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6436_0.jpg'></img>
+<br/>好的现在在创造模式演示一下1.3里面的一个新红石电路<br/>由于现在红石可以放在一些特定的非实体方块上，电路有了很多很新奇的特征<br/>最常见的就是无延时半导体<br/>由于在半砖不是实体方块，半砖上的红石就被认为是浮空的，没有和向下的红石连接<br/>因此就产生了无延时半导体<br/>这样允许电流只从一个方向通过，既向上进入非实体方块的方向<br/>PS 最常用于此类应用的非实体方块是倒置的鹅卵石半砖</div>
+            <div class="post_floor">6436楼</div>
+            <div class="post_time">2012-09-15 14:16</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6437_0.jpg'></img>
+<br/>这种非对称电路大家一定很熟悉，左侧为输入，右侧为输出<br/>这样产生的效果是，OFF->ON时延时1tick，ON->OFF时延时3tick，造成了不对称<br/>这种电路很多情况下可以替代ABBA电路使用</div>
+            <div class="post_floor">6437楼</div>
+            <div class="post_time">2012-09-15 14:17</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6438_0.jpg'></img>
+<br/>有了半导体电路之后，1.3的非对称电路可以做到无OFF->ON延时<br/>对于精确控制时间差是很有用的</div>
+            <div class="post_floor">6438楼</div>
+            <div class="post_time">2012-09-15 14:19</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6439_0.jpg'></img>
+<br/>这时我们把BUD第二状态的输出电路连接到一个非对称电路和NOT门，输出给左侧的2个活塞<br/>这样做到的是，BUD激活后1tick活塞就开始收缩，空出位置让羊进入<br/>注意，上推活塞是在BUD激活后2tick开始收缩的，因此这个收缩必须要在1tick的时候发生<br/>如果没有1.3这个无延时半导体电路的话，那么设计就要复杂得多了（由于这种BUD的最大时间差只能是4tick，增大延时导致要换BUD设计）</div>
+            <div class="post_floor">6439楼</div>
+            <div class="post_time">2012-09-15 14:24</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6445_0.jpg'></img>
+<br/>BUD第二状态的输出也连接到右边的活塞，同样是连接到一个不对称电路</div>
+            <div class="post_floor">6445楼</div>
+            <div class="post_time">2012-09-15 14:27</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6448_0.jpg'></img>
+<br/>至此机器的主题部分就已经完成了，测试一下<br/>在草地上放一个红石激发BUD，可以看到左侧活塞和右侧活塞先分别收缩和伸出，让羊移动到左侧的仓室<br/>然后下方的草地被向下拉，进入队列，然后整个队列逆时针旋转，新的草地被放入<br/>之后新的草地被上推，然后左侧和右侧的活塞分别伸出和收缩，把羊归位</div>
+            <div class="post_floor">6448楼</div>
+            <div class="post_time">2012-09-15 14:31</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6451_0.jpg'></img>
+<br/>最后再封装一下<br/>前面是放羊的地方，爬楼梯上去右侧是剪羊毛的地方</div>
+            <div class="post_floor">6451楼</div>
+            <div class="post_time">2012-09-15 14:36</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6453_0.jpg'></img>
+<br/>装潢成白桦木板<br/>半砖是为了防止不小心掉进羊仓里面</div>
+            <div class="post_floor">6453楼</div>
+            <div class="post_time">2012-09-15 14:51</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6454_0.jpg'></img>
+<br/>给加了一个楼梯间</div>
+            <div class="post_floor">6454楼</div>
+            <div class="post_time">2012-09-15 14:52</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6456_0.jpg'></img>
+<br/>加装一个踏板<br/>这个踏板的作用就是，踩的时候会放水和收水<br/>这样上去的时候放水，羊就会往上跳，这样我们就能很方便的剪羊毛<br/>下去的时候又会收水，这样羊就能继续吃草长回羊毛了</div>
+            <div class="post_floor">6456楼</div>
+            <div class="post_time">2012-09-15 14:57</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6457_0.jpg'></img>
+<br/><img src='img/104_6457_1.jpg'></img></div>
+            <div class="post_floor">6457楼</div>
+            <div class="post_time">2012-09-15 15:02</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>踏板的电路不说了，很简单，一个中继器充能下传，然后直接传给发射器<br/>注意的是草地上应该用半砖，这样能保证草皮不被破坏</div>
+            <div class="post_floor">6458楼</div>
+            <div class="post_time">2012-09-15 15:02</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6459_0.jpg'></img>
+<br/>第一次踩踏板就会放水，第二次就会收回</div>
+            <div class="post_floor">6459楼</div>
+            <div class="post_time">2012-09-15 15:03</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6462_0.jpg'></img>
+<br/>接下来在创造模式演示一个很常用的电路，用于限制信号的长度<br/>原理很简单，电流通过后，被中继器延时1tick，然后激发活塞，切断电路<br/>因此产生了1tick的脉冲，无论输入电流的长短<br/>wiki上的名字叫pulse-limiter，有非活塞的设计<br/>活塞设计相对更加灵活一点，占地面积也相对小</div>
+            <div class="post_floor">6462楼</div>
+            <div class="post_time">2012-09-15 15:08</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6463_0.jpg'></img>
+<br/>在这里加一个按钮，作为手动旋转队列<br/>这样当有时候草皮过了一个轮回还没长出来，但是又急需的时候可以按一下按钮马上旋转队列，切换到下一个草皮<br/>思路也很简单，激发一次BUD就可以了</div>
+            <div class="post_floor">6463楼</div>
+            <div class="post_time">2012-09-15 15:10</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6465_0.jpg'></img>
+<br/>按钮产生的脉冲是1s的，而我们的BUD是0.4s的<br/>因此直接把信号传送过去会激发2次BUD<br/>因此先缩短信号长短到1tick</div>
+            <div class="post_floor">6465楼</div>
+            <div class="post_time">2012-09-15 15:13</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6467_0.jpg'></img>
+<br/><img src='img/104_6467_1.jpg'></img>
+<br/>缩短了脉冲之后一直连过来，然后离活塞1格远的地方放中继器<br/>中继器和活塞中间没有任何东西<br/>这样为什么可以实现更新BUD呢？<br/>中继器可以更新半径2格内的红石效应器<br/>因此这样做，不仅更新了活塞，而且中继器的信号没有影响到BUD的运行<br/>除了这种方法更新BUD以外还可以通过物品直接更新，例如红石激活各种门，加速铁轨，红石灯等</div>
+            <div class="post_floor">6467楼</div>
+            <div class="post_time">2012-09-15 15:19</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6468_0.jpg'></img>
+<br/>测试一下按钮，正常工作，成功更新了队列</div>
+            <div class="post_floor">6468楼</div>
+            <div class="post_time">2012-09-15 15:20</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6469_0.jpg'></img>
+<br/>草的传播速度还是挺慢的，做了这么久了还有一半的泥土没长草<br/>现在只需要等草长完，然后抓羊进去就可以正常运作了</div>
+            <div class="post_floor">6469楼</div>
+            <div class="post_time">2012-09-15 15:23</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6470_0.jpg'></img>
+<br/>从背面看电路布线，挺简单的电路但是由于空间很小结果密密麻麻。。<br/>地下建造就麻烦死了，虽然会好看很多<br/>毕竟裸露的线路实在是太煞风景了</div>
+            <div class="post_floor">6470楼</div>
+            <div class="post_time">2012-09-15 15:25</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>好了今天就玩到这里吧，好晚了要去睡觉了。。<br/>明天抓几只羊，染色之后就扔进羊仓里面就可以了<br/>打算一种颜色的羊放3只进去，这样一共就是48只羊<br/>喜欢的颜色可以再加几只进去<br/>总之羊毛也算是可以较高速生产了<br/>回复一下大家就去睡觉</div>
+            <div class="post_floor">6471楼</div>
+            <div class="post_time">2012-09-15 15:29</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6509_0.jpg'></img>
+<br/>我擦这行字真长。。</div>
+            <div class="post_floor">6509楼</div>
+            <div class="post_time">2012-09-16 01:01</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>帮忙做了午饭一起吃。。<br/>继续打MC</div>
+            <div class="post_floor">6515楼</div>
+            <div class="post_time">2012-09-16 02:03</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6518_0.jpg'></img>
+<br/>造好一个简单的羊圈，先繁殖好指定数量然后全部推到羊仓里面<br/>左侧是到羊仓的屋顶，右侧是到地面</div>
+            <div class="post_floor">6518楼</div>
+            <div class="post_time">2012-09-16 02:25</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6519_0.jpg'></img>
+<br/>凑齐16种染色剂，2到3个<br/>准备每种颜色的羊都放3只进去</div>
+            <div class="post_floor">6519楼</div>
+            <div class="post_time">2012-09-16 02:30</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6520_0.jpg'></img>
+<br/>来到羊场</div>
+            <div class="post_floor">6520楼</div>
+            <div class="post_time">2012-09-16 02:33</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6522_0.jpg'></img>
+<br/>周围就有几只羊，马上拐卖</div>
+            <div class="post_floor">6522楼</div>
+            <div class="post_time">2012-09-16 02:36</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6523_0.jpg'></img>
+<br/>诱拐上楼梯</div>
+            <div class="post_floor">6523楼</div>
+            <div class="post_time">2012-09-16 02:38</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/><img src='img/104_6524_0.jpg'></img>
+<br/>3只羊</div>
+            <div class="post_floor">6524楼</div>
+            <div class="post_time">2012-09-16 02:41</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="103.html">上一页</a>
+        <a href='99.html'>99</a><a href='100.html'>100</a><a href='101.html'>101</a><a href='102.html'>102</a><a href='103.html'>103</a>
+        <a href="#">104</a>
+        <a href='104.html'>104</a><a href='105.html'>105</a><a href='106.html'>106</a><a href='107.html'>107</a><a href='108.html'>108</a><a href='109.html'>109</a>
+        <a href="105.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>

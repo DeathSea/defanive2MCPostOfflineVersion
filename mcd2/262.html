@@ -1,0 +1,611 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="261.html">上一页</a>
+        <a href='257.html'>257</a><a href='258.html'>258</a><a href='259.html'>259</a><a href='260.html'>260</a><a href='261.html'>261</a>
+        <a href="#">262</a>
+        <a href='262.html'>262</a><a href='263.html'>263</a><a href='264.html'>264</a><a href='265.html'>265</a><a href='266.html'>266</a><a href='267.html'>267</a>
+        <a href="263.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最后一步也是非常关键的一步<br/>var16 || var14 && var 15<br/>若这个表达式为true的话<br/>整体的生长速度减半<br/>var14、var15、var16就是之前的同种瓜苗判断<br/>||是逻辑或运算，&&是逻辑与运算<br/>这个表达式与各个参数的关系可以用布尔运算器试一下<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19602_0.jpg'></img></div>
+            <div class="post_floor">19602楼</div>
+            <div class="post_time">2013-07-28 12:58</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>那么接下来我们就可以对这两种耕田的gm进行一次计算了<br/>左边的耕田取其中一个中间的瓜苗<br/>周围有8个湿润的耕田，生长速度加8x3/4<br/>下方湿润耕田，生长速度加3<br/>于是现在的生长速度为1+8x3/4+3=10<br/>var14=T，var15=T，var16=T，于是生长速度减半<br/>最后的生长速度为10/2=5<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19604_0.jpg'></img></div>
+            <div class="post_floor">19604楼</div>
+            <div class="post_time">2013-07-28 13:03</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来看右边的耕田<br/>周围有5个湿润的耕田，增加生长速度5*3/4<br/>瓜苗耕田湿润，增加生长速度3<br/>现在的生长速度为1+5*3/4+3=7.75<br/>var14=T，var15=F，var16=F，对生长速度无影响<br/>因此最终的生长速度为7.75<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19606_0.jpg'></img></div>
+            <div class="post_floor">19606楼</div>
+            <div class="post_time">2013-07-28 13:06</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>可以看到，右边的生长速度7.75大于左边的生长速度5<br/>这个生长速度到底有多大影响呢，我们回到random tick的代码上<br/>左边的耕田gm为5，因此随机数范围为0-5，抽中0的几率为1/6<br/>也就是说平均要6次random tick才能进行一次生长<br/>8次生长后，也就是说平均要54.6分钟才长一个西瓜<br/>右边的耕田gm为7.75，因此随机数范围为0-3，抽中0的几率为1/4<br/>也就是说平均要4次random tick才能进行一次生长<br/>8次生长后，也就是说平均要36.4分钟才长一个西瓜<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19608_0.jpg'></img></div>
+            <div class="post_floor">19608楼</div>
+            <div class="post_time">2013-07-28 13:11</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>可以看到，尽管是一点点小小的布置差异<br/>导致了左边54分钟长一个西瓜<br/>而右边36分钟就长一个西瓜了<br/>其实获取生长速度的算法看起来很复杂，实际上很简单<br/>分成两部分：养分供给，养分竞争<br/>养分供给就是耕田/湿润耕田提供的生长加速<br/>而养分竞争则是由于周围同种作物导致生长减速<br/>当然，这只是一个粗略的解释<br/>具体按照上面的代码流程计算一次就能体验到这个算法的意义<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19609_0.jpg'></img></div>
+            <div class="post_floor">19609楼</div>
+            <div class="post_time">2013-07-28 13:14</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>刚刚讲解完了上面两种排布的差异<br/>结果是仅仅调换一下瓜苗位置都可造成巨大的速度差异<br/>接下来，理解了上面的生长速度系统<br/>左边和右边两种耕田布置方法<br/>哪一种产生西瓜的速度更快呢？<br/>如果想进行自我挑战的同学<br/>可以尝试先不看接下来的直播<br/>把右边的耕田按照上面的代码算一次<br/>看看自己的预测是否正确<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19610_0.jpg'></img></div>
+            <div class="post_floor">19610楼</div>
+            <div class="post_time">2013-07-28 13:19</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这种布置与上一种布置最大的差异就在于水换成了小麦田<br/>那么我们选取中间的瓜苗进行计算<br/>周围有8个湿润的耕田，增加生长速度8*3/4<br/>瓜苗的耕田湿润，增加生长速度3<br/>那么现在的生长速度就是1+8*3/4+3=10<br/>var14=T，var15=F，var16=F，不影响生长速度<br/>因此最终的生长速度就是10<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19612_0.jpg'></img></div>
+            <div class="post_floor">19612楼</div>
+            <div class="post_time">2013-07-28 13:23</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>左边的生长速度是7.75，而右边的生长速度为10<br/>右边来说，平均需要27.3分钟才长一个西瓜<br/>而左边则需要36分钟，因此右边比较快<br/>形象的来说，湿润的耕田给瓜苗提供了额外的“养分”<br/>因此生长速度更快了<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19613_0.jpg'></img></div>
+            <div class="post_floor">19613楼</div>
+            <div class="post_time">2013-07-28 13:26</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>在很久以前，西瓜只有在耕田上才会长出<br/>而现在已经更新为泥土/耕田/草地任意之一即可<br/>那么现在大家都习惯于不再耕长西瓜的田了<br/>但是，经过刚才的计算，相信大家也了解到了耕田的重要性<br/>那么，左边的生长速度为7.75，平均36分钟出一个西瓜<br/>右边的生长速度，仅仅由于偷懒不耕田，会降低多少呢？<br/>再次，想挑战自己的同学<br/>可以尝试不看接下来的直播，先自己算一次<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19614_0.jpg'></img></div>
+            <div class="post_floor">19614楼</div>
+            <div class="post_time">2013-07-28 13:31</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>那让我们来计算右边的生长速度吧<br/>周围有2个湿润的耕田，增加生长速度2*3/4<br/>瓜苗的耕田湿润，增加生长速度3<br/>现在的生长速度为1+2*3/4+3=5.5<br/>同样的var14 15 16都没有影响生长速度<br/>那么平均下来就需要45.5分钟才长一个西瓜<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19618_0.jpg'></img></div>
+            <div class="post_floor">19618楼</div>
+            <div class="post_time">2013-07-28 13:40</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>所以说，左边36分钟出一个西瓜，右边45分钟出一个<br/>也就是说，多花1分钟耕一下田，可以节省10分钟的等待时间<br/>不过当然啦，自动化之后也不在乎这10分钟的时间了<br/>挂机即可<br/>不过这里只是对gm算法的一个利用而已<br/>个人感觉mojang对这个gm算法的设计非常的好<br/>鼓励玩家积极动手<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19622_0.jpg'></img></div>
+            <div class="post_floor">19622楼</div>
+            <div class="post_time">2013-07-28 13:47</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>讲完西瓜了，我们也向小麦看看吧<br/>小麦与西瓜有同样的生长速度系统，完全一样的算法<br/>很早以前直播时就提到过小麦田的生长速度和面积利用率的取舍<br/>今天终于有答案了<br/>具体的计算就不进行演示了，相信经过这么多例子大家都会了<br/>如果小麦田全部排满小麦的话，生长速度为5，平均54分钟成熟<br/>如果如此只排44个小麦的话，生长速度为10，平均27分钟成熟<br/>也就是说，全部排满小麦，54分钟可以成熟1次，收获80个小麦<br/>只排44个小麦的话，54分钟成熟2次，收获88个小麦<br/>当然啦，这样的确提高了效率<br/>但是仅仅多了8个小麦而已，不过却要多收割一次<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19625_0.jpg'></img></div>
+            <div class="post_floor">19625楼</div>
+            <div class="post_time">2013-07-28 13:59</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>然而对于生长速度算法的运用并不在这里<br/>当有2种作物时，常用的排布是2片9x9的田分别种上2种作物<br/>土豆，萝卜也是完全相同的生长速度系统<br/>2片紧凑田的结果就是54分钟内需要收割1次，收获80+80<br/>而2片如图的间隔交错田的结果是54分钟内需要收割2次<br/>但是却可以收获160+160，产量直接翻倍<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19626_0.jpg'></img></div>
+            <div class="post_floor">19626楼</div>
+            <div class="post_time">2013-07-28 14:05</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>多种作物交错耕作的思想同样也可以运用到瓜田<br/>在瓜田中这种种植，由于瓜苗不是同种<br/>因此不会导致var14 15 16产生减慢生长速度的效果<br/>然而瓜苗又可以同时受到周围8个耕田的养分<br/>因此达到了最高10的生长速度，27分钟可以长出一个瓜苗<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19628_0.jpg'></img></div>
+            <div class="post_floor">19628楼</div>
+            <div class="post_time">2013-07-28 14:13</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>好吧今天直播就到这里了<br/>今天虽然以比较沉闷的看代码和理论计算为直播开头<br/>但是最终却以不小的收获结束这次直播<br/>如果说在这次直播里面学到了农业上的一些可以改进的地方<br/>就赶快开启自己的世界/服务器动手改造吧！<br/>今天直播的内容是我和繁华一起的研究结果<br/>自然也感谢繁华陪我逗B了一个下午的java代码<br/>————————————————————————————————<br/>上一期直播找茬的答案是，2种蘑菇块的数量都从4个变成了1个<br/>实际上是由于箱子里东西都是一个，就蘑菇块有4个<br/>于是在截图前强迫症挖掉了。。<br/>如果没看错的话，<font style='color:blue'>@瓶子中的带鱼</font>
+<br/> 是第一个猜对的！<br/>今天的找茬也在图里面了，并不难哦！<br/>不管怎么说，先睡觉去了，大家晚安<br/> <br/>——来自 MCLive
+<br/><img src='img/262_19630_0.jpg'></img></div>
+            <div class="post_floor">19630楼</div>
+            <div class="post_time">2013-07-28 14:21</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>UHC S2E4也发布了！<br/>S2的更新速度可能稍微慢，不过依然感谢大家的持续关注<br/>
+<br/><a href='http://tieba.baidu.com/p/2455325226'>http://tieba.baidu.com/p/2455325226</a>
+<br/>
+<br/><br/>第四季的赛事已经提上日程了，而且这次会有更多的喵服成员参加！<br/>目测可以有4-5只3人队伍，比赛会更加激烈<br/>当然也有可能尝试新的分组人数，例如2人或4人<br/>总之值得期待，我也很想玩UHC了！</div>
+            <div class="post_floor">19729楼</div>
+            <div class="post_time">2013-07-29 23:49</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最近喵服全员皮肤都穿上了皮卡丘的外套！<br/>相信大家已经在19447L 19448L 19558L 19559L看到了<br/>这套皮肤会传一段时间，到UHC的时候再换掉
+<br/><img src='img/262_19746_0.jpg'></img></div>
+            <div class="post_floor">19746楼</div>
+            <div class="post_time">2013-07-31 11:44</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>然后在 喵微博（meowcraft点net） 上看到了一张绘画<br/>顿时就惊呆了！
+<br/><img src='img/262_19748_0.jpg'></img>
+<br/>这张图是 <font style='color:blue'>@罪雨潇音</font>
+<br/> 给我画的，非常帅气漂亮！<br/>再次感谢，非常棒的水准！赞x65536！</div>
+            <div class="post_floor">19748楼</div>
+            <div class="post_time">2013-07-31 11:48</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>UHC S2E5 发布了<br/>
+<br/><a href='http://tieba.baidu.com/p/2455325226'>http://tieba.baidu.com/p/2455325226</a>
+<br/>
+<br/><br/>发布进程加快了，S2将会在周末结束前完结<br/>为什么呢，是因为 UHC 第四季 就快要来了！<br/>目前计划是在周日进行比赛，如果没问题的话下周中就能看到S4E1了<br/>当然这只是计划而已，还得看人来得齐不齐<br/>PS 明天是个特别的日子</div>
+            <div class="post_floor">19836楼</div>
+            <div class="post_time">2013-08-01 14:40</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>直播终于一周年</div>
+            <div class="post_floor">20355楼</div>
+            <div class="post_time">2013-08-02 13:54</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>直播终于一周年了！<br/>感谢大家一直以来的支持，能够一直直播到今天也是很意想不到的事情！<br/>下面是我的周年庆生存世界的游览视频，欢迎围观！<br/>
+<br/><a href='http://tieba.baidu.com/p/2503617211'>http://tieba.baidu.com/p/2503617211</a>
+<br/>
+<br/><br/>直播贴，生日快乐！</div>
+            <div class="post_floor">20365楼</div>
+            <div class="post_time">2013-08-02 13:56</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>非常感谢大家周年庆对我的回复和支持！<br/>积累了好多回复，暂时还没办法一一答复大家<br/>但是估计是回复量最高的一天了，感谢大家的支持！<br/>UHC S2E6 也发了，欢迎继续围观！<br/>
+<br/><a href='http://tieba.baidu.com/p/2455325226'>http://tieba.baidu.com/p/2455325226</a>
+<br/></div>
+            <div class="post_floor">20494楼</div>
+            <div class="post_time">2013-08-03 09:49</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最近U2B在火什么呢，chunk loader<br/>大家也知道一个chunk在玩家靠近会被加载<br/>而远离一个chunk之后这个chunk就会被卸载<br/>所谓的chunk loader就是可控的chunk强制加载器<br/>1.6更新后，原版中最先实现chunk loader的应该是SimplySarc<br/>Panda4994在此之后做了一个非常详细的讲解<br/>所以我在这里只是转播一下<br/> <br/>——来自 MCLive
+<br/><img src='img/262_20505_0.jpg'></img></div>
+            <div class="post_floor">20505楼</div>
+            <div class="post_time">2013-08-03 10:23</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>在此用2x2的格子代表一个chunk<br/>那么假如这5x5个chunk暂时都没被加载的话<br/>也就是说玩家离这些chunk很远<br/>此时如果用拉杆从已经加载的chunk中引一条红石线路过去<br/>任何类型的电路或其他机械，只要产生了跨越chunk边界的更新<br/>那么这个chunk就会被加载到内存中<br/>如图被红石线跨越的3个chunk就被内存加载了<br/>这3个chunk的确被加载了，但并不是完全存活<br/>很多游戏机制都并不能正常执行<br/>我个人喜欢把这些chunk叫做 inactive loaded chunk<br/> <br/>——来自 MCLive
+<br/><img src='img/262_20509_0.jpg'></img></div>
+            <div class="post_floor">20509楼</div>
+            <div class="post_time">2013-08-03 10:30</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>如果一个inactive loaded chunk周围的5x5个chunk都是被加载了的话<br/>那么这个chunk就会变成彻底的加载了<br/>个人喜欢叫成 active loaded chunk，因为这个chunk是实际活动的<br/>例如途中正中心的铁块就是active loaded chunk<br/> <br/>——来自 MCLive
+<br/><img src='img/262_20510_0.jpg'></img></div>
+            <div class="post_floor">20510楼</div>
+            <div class="post_time">2013-08-03 10:33</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>那么active和inactive有什么区别呢<br/>active loaded chunk其实就是最常见的在内存中的活动区块<br/>例如玩家周围的15x15个chunk都是active loaded chunks<br/>spawn chunks周围的是active loaded chunks<br/>但是注意的是，这些active loaded chunks周围还有一圈inactive loaded chunks<br/>实际上游戏的机制是所有的chunk都会被inactive loaded<br/>然后根据周围chunk的状态来选择是否变成active loaded<br/>简单的来说，游戏只能inactive的加载chunk<br/>只不过chunk可以从inactive变成active<br/> <br/>——来自 MCLive
+<br/><img src='img/262_20512_0.jpg'></img></div>
+            <div class="post_floor">20512楼</div>
+            <div class="post_time">2013-08-03 10:38</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>说了这么多废话，inactive和active有什么区别呢<br/>这些又和完全没有被加载的chunk有什么区别呢<br/>只要一个chunk被加载了，那么方块更新就可以正常运作<br/>例如在被加载的chunk里面倒一桶水，那么水会扩散<br/>inactive的chunk里面tile entity和entity并不会正常工作<br/>因此熔炉不会烧物品，矿车不会移动，怪物不会despawn<br/>而active的chunk里面以上都会正常执行<br/> <br/>——来自 MCLive
+<br/><img src='img/262_20513_0.jpg'></img></div>
+            <div class="post_floor">20513楼</div>
+            <div class="post_time">2013-08-03 10:43</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>那么一个chunk又是怎么被卸载的呢<br/>一个chunk被卸载的唯一方式就是玩家离开这个chunk太远<br/>从一个chunk跑远了，从chunk传送到其他世界，在chunk中死亡<br/>都会导致这个chunk被卸载<br/>PS 除非是spawn chunks<br/>因为spawn chunks总会在内存中<br/> <br/>——来自 MCLive
+<br/><img src='img/262_20514_0.jpg'></img></div>
+            <div class="post_floor">20514楼</div>
+            <div class="post_time">2013-08-03 10:46</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>相信大家对chunk loader的应用一定有不少疯狂的想法了<br/>例如最常见的一个问题，就是人跑远了之后熔炉就不再工作了<br/>使用chunk loader就可以保持这个熔炉正常工作<br/>由于熔炉是tile entity，因此我们要让这个chunk作为active loaded<br/>因此我们只需要在让玩家彻底离开熔炉周围的5x5个chunk之后<br/>使用任何一类更新让5x5的chunk被inactive loaded<br/>那么熔炉这个chunk就会变成active loaded了<br/>熔炉就能够正常工作了<br/> <br/>——来自 MCLive
+<br/><img src='img/262_20520_0.jpg'></img></div>
+            <div class="post_floor">20520楼</div>
+            <div class="post_time">2013-08-03 10:51</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>另外一个应用就是长距离矿车的运行<br/>JL2579对此做了一个视频<br/>矿车也是entity，运行距离太远的话到达了未加载chunk中就不再行驶了<br/>那么要做到让矿车不断运动的话<br/>只需要在矿车进入未加载chunk前<br/>把未加载chunk周围的5x5个chunk都inactive loaded<br/>那么就可以保证矿车持续运行了<br/> <br/>——来自 MCLive
+<br/><img src='img/262_20522_0.jpg'></img></div>
+            <div class="post_floor">20522楼</div>
+            <div class="post_time">2013-08-03 10:55</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="261.html">上一页</a>
+        <a href='257.html'>257</a><a href='258.html'>258</a><a href='259.html'>259</a><a href='260.html'>260</a><a href='261.html'>261</a>
+        <a href="#">262</a>
+        <a href='262.html'>262</a><a href='263.html'>263</a><a href='264.html'>264</a><a href='265.html'>265</a><a href='266.html'>266</a><a href='267.html'>267</a>
+        <a href="263.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,600 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="251.html">上一页</a>
+        <a href='247.html'>247</a><a href='248.html'>248</a><a href='249.html'>249</a><a href='250.html'>250</a><a href='251.html'>251</a>
+        <a href="#">252</a>
+        <a href='252.html'>252</a><a href='253.html'>253</a><a href='254.html'>254</a><a href='255.html'>255</a><a href='256.html'>256</a><a href='257.html'>257</a>
+        <a href="253.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>设计是当怪物掉落到这块踏板上时<br/>会受到摔落伤害<br/>然后激活活塞，把怪物推向前方的水流<br/>PS 话说这种装置的设计实在不知道应该怎么做好<br/>以前有水流下放围栏的办法，但是需要提高很多摔落高度<br/>估计有效的办法应该就只有这一个了吧<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18423_0.jpg'></img></div>
+            <div class="post_floor">18423楼</div>
+            <div class="post_time">2013-07-06 00:07</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>电路可以非常简单，直接把踏板的信号连接到活塞即可<br/>但是这样并不完美<br/>当刷怪塔速度快时，尤其是像我的设计<br/>踏板信号会延迟很久才关闭，活塞也会保持伸出<br/>这样下一个摔落的怪物就会落在活塞上<br/>而减少了摔落伤害<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18424_0.jpg'></img></div>
+            <div class="post_floor">18424楼</div>
+            <div class="post_time">2013-07-06 00:10</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>解决方法也很简单，如图做一个脉冲缩短器即可<br/>过了1tick之后，活塞就会推动方块，切断信号<br/>PS 这个是无延迟的上边缘检测器<br/>之前写了一篇无延迟红石电路的帖子<br/>不过很多人断章取义的认为无延迟不可能实现<br/>于是存档也放了一个下载<br/>不过不相信的人也不会有那个耐心下载存档看看的<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18425_0.jpg'></img></div>
+            <div class="post_floor">18425楼</div>
+            <div class="post_time">2013-07-06 00:14</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>不过有些时候怪物会卡在踏板的角落上<br/>导致活塞没有成功的把怪物推出去<br/>这样的话怪物就会一直卡住电路<br/>解决方法就是把输入信号改成一个脉冲<br/>当有生物踩在踏板上时，活塞不断的推出<br/>直到生物被推出为止<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18426_0.jpg'></img></div>
+            <div class="post_floor">18426楼</div>
+            <div class="post_time">2013-07-06 00:16</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>现在这部分的改变已经完成了<br/>下一步就是在这里做各种功能的分流点<br/>也是最关键的一步<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18427_0.jpg'></img></div>
+            <div class="post_floor">18427楼</div>
+            <div class="post_time">2013-07-06 00:28</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这里将会被改造成一个很简单的分流口<br/>这是其中一种情况，怪物会被直接推到下面<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18428_0.jpg'></img></div>
+            <div class="post_floor">18428楼</div>
+            <div class="post_time">2013-07-06 00:34</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这是另外一种情况<br/>活塞推出，并且发射器发射水桶（在此没有演示出来）<br/>此时怪物就会顺水往前流<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18429_0.jpg'></img></div>
+            <div class="post_floor">18429楼</div>
+            <div class="post_time">2013-07-06 00:35</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>当怪物走这边时，我们会做一个怪物分离器<br/>我们希望除了苦力怕之外的其他怪物被过滤掉<br/>只有苦力怕被过滤出来<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18430_0.jpg'></img></div>
+            <div class="post_floor">18430楼</div>
+            <div class="post_time">2013-07-06 00:43</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>仍然在建造中，可能工作原理仍然不是很清晰<br/>1.4之前要过滤只剩苦力怕是非常简单的<br/>铁傀儡只会攻击僵尸和骷髅<br/>因此苦力怕就会被过滤出来<br/>只要保证骷髅和僵尸血量可以被一击必杀即可<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18431_0.jpg'></img></div>
+            <div class="post_floor">18431楼</div>
+            <div class="post_time">2013-07-06 00:47</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>我擦倒岩浆倒杯具了。。<br/>说到岩浆，161岩浆会像水一样很快的自动消失了<br/>清理起来方便了很多<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18432_0.jpg'></img></div>
+            <div class="post_floor">18432楼</div>
+            <div class="post_time">2013-07-06 00:52</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而1.4更新后，只要是铁傀儡可以一击必杀的怪物<br/>那么铁傀儡都会攻击<br/>因此曾经的方法就不再适用了<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18433_0.jpg'></img></div>
+            <div class="post_floor">18433楼</div>
+            <div class="post_time">2013-07-06 00:55</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>但是要分离苦力怕的方法仍然是有的<br/>雪人只会攻击非苦力怕的怪物，也就是骷髅和僵尸<br/>因此我们可以利用这一点，把骷髅和僵尸给处理掉<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18434_0.jpg'></img></div>
+            <div class="post_floor">18434楼</div>
+            <div class="post_time">2013-07-06 00:59</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>了解了这点其实就很简单了<br/>中间是怪物的流水线，怪物从这里流过<br/>由于水流是往右下推的，因此怪物会被往右下推动<br/>但是由于右边是鹅卵石围栏，因此怪物无法通过<br/>最右侧是雪人的站位<br/>雪人在见到非苦力怕的怪物后，就会用雪球攻击<br/>雪球的推动效果就会把怪物推入岩浆烧死<br/>这样就做到了过滤苦力怕的效果<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18436_0.jpg'></img></div>
+            <div class="post_floor">18436楼</div>
+            <div class="post_time">2013-07-06 01:07</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>回家取了雪人之后，现在就是造雪人的时候了<br/>门除了用于阻挡水流之外，也用于分隔雪人<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18438_0.jpg'></img></div>
+            <div class="post_floor">18438楼</div>
+            <div class="post_time">2013-07-06 01:13</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>封棺，接下来整个机器应该可以运作了<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18439_0.jpg'></img></div>
+            <div class="post_floor">18439楼</div>
+            <div class="post_time">2013-07-06 01:14</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最后检查一次密封性，应该可以投入使用了<br/>PS 这两个栅栏门是什么作用呢<br/>有时候怪物还没到岩浆区域，雪人就开始攻击了<br/>此时并不能杀死怪物<br/>如果是骷髅的话，就会反击把骷髅杀死<br/>而栅栏门可以阻挡雪人的视线<br/>因此只有怪物进入了岩浆区域后雪人才开始射击<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18440_0.jpg'></img></div>
+            <div class="post_floor">18440楼</div>
+            <div class="post_time">2013-07-06 01:17</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>放一批怪物下来测试<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18441_0.jpg'></img></div>
+            <div class="post_floor">18441楼</div>
+            <div class="post_time">2013-07-06 01:17</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>苦力怕正常通过<br/>而骷髅和僵尸就被雪人射到了岩浆中死亡<br/>由于之前已经把怪物的血量降到1心了<br/>一旦进入岩浆就立即死亡<br/>骷髅没有反射伤害雪人的机会<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18442_0.jpg'></img></div>
+            <div class="post_floor">18442楼</div>
+            <div class="post_time">2013-07-06 01:20</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>机器好像意外失效了一次。。<br/>意外射中苦力怕导致爆炸<br/>创造里面测试是没有问题的，看起来在这里还是稍微有点悲剧<br/>不过今晚就先玩到这里吧<br/>下次直播再继续修改<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18443_0.jpg'></img></div>
+            <div class="post_floor">18443楼</div>
+            <div class="post_time">2013-07-06 01:26</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>。。。。<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18444_0.jpg'></img></div>
+            <div class="post_floor">18444楼</div>
+            <div class="post_time">2013-07-06 01:27</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>刚刚检查了一遍发现<br/>问题其实是因为我在生存里面做得偷懒了。。<br/>创造里面用长度为7的岩浆区域和7个雪人，可以保证怪物在前5格就被处理掉<br/>即使有误伤苦力怕，苦力怕也会被立刻推到岩浆池里烧死<br/>但是我在生存里只造了长度为5的岩浆区域和5个雪人<br/>有时怪物到了最后一刻还没被杀死<br/>而此时误伤苦力怕，由于已经离开了岩浆区域，没有杀死，导致了爆炸<br/>下一次修改时把岩浆区域和雪人改回7就可以了 = =<br/>PS 这个系统稳定性非常高的，误伤也不会爆炸<br/>当然是指正确建造的前提下。。</div>
+            <div class="post_floor">18445楼</div>
+            <div class="post_time">2013-07-06 01:37</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>= = 貌似我生存里面岩浆区域只造了4。。<br/>怪不得杯具了。。<br/>不管怎么说，下次改改就好了<br/>这个系统是很稳定的，即使误伤苦力怕也立刻死亡<br/>总之下次把岩浆清理了，然后整个系统重新造一次就好了</div>
+            <div class="post_floor">18446楼</div>
+            <div class="post_time">2013-07-06 01:53</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>今天算是安顿下来了，来打MC吧！<br/>暂时还是没有升级到1.6.1<br/>我们来继续改造刷怪塔<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18470_0.jpg'></img></div>
+            <div class="post_floor">18470楼</div>
+            <div class="post_time">2013-07-06 20:57</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>上次由于造分离机的时候偷懒只造了4格长<br/>实际上需要7格才能保证工作正常<br/>最后就导致了这个大悲剧<br/>今天的任务就是把泄漏的岩浆清理了<br/>修复装置，然后重新建一次<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18471_0.jpg'></img></div>
+            <div class="post_floor">18471楼</div>
+            <div class="post_time">2013-07-06 20:59</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>爆炸的时候牌子都烧毁了<br/>身上没带够木材，准备回家一次<br/>而且也要带更多的南瓜和雪块造雪人<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18472_0.jpg'></img></div>
+            <div class="post_floor">18472楼</div>
+            <div class="post_time">2013-07-06 21:01</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这条岩浆柱的清理估计也得花好久<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18475_0.jpg'></img></div>
+            <div class="post_floor">18475楼</div>
+            <div class="post_time">2013-07-06 21:09</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>只能先倒一桶水然后等慢慢消失了<br/>会形成一条柱子<br/>正好挖下去，收一点鹅卵石用<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18476_0.jpg'></img></div>
+            <div class="post_floor">18476楼</div>
+            <div class="post_time">2013-07-06 21:11</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>拆完，干净多了<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18481_0.jpg'></img></div>
+            <div class="post_floor">18481楼</div>
+            <div class="post_time">2013-07-06 21:16</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这里刷了一只僵尸<br/>不过似乎只要人站在梯子上，僵尸就看不到你<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18483_0.jpg'></img></div>
+            <div class="post_floor">18483楼</div>
+            <div class="post_time">2013-07-06 21:18</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>原来的计划是这里作为切换分离/不分离苦力怕的选择点<br/>但是由于分离长度不够，我们必须要把这里换掉<br/> <br/>——来自 MCLive
+<br/><img src='img/252_18484_0.jpg'></img></div>
+            <div class="post_floor">18484楼</div>
+            <div class="post_time">2013-07-06 21:19</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="251.html">上一页</a>
+        <a href='247.html'>247</a><a href='248.html'>248</a><a href='249.html'>249</a><a href='250.html'>250</a><a href='251.html'>251</a>
+        <a href="#">252</a>
+        <a href='252.html'>252</a><a href='253.html'>253</a><a href='254.html'>254</a><a href='255.html'>255</a><a href='256.html'>256</a><a href='257.html'>257</a>
+        <a href="253.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>

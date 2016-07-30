@@ -1,0 +1,602 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="265.html">上一页</a>
+        <a href='261.html'>261</a><a href='262.html'>262</a><a href='263.html'>263</a><a href='264.html'>264</a><a href='265.html'>265</a>
+        <a href="#">266</a>
+        <a href='266.html'>266</a><a href='267.html'>267</a><a href='268.html'>268</a><a href='269.html'>269</a><a href='270.html'>270</a><a href='271.html'>271</a>
+        <a href="267.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>刷动物有2种途径<br/>第一种就是在chunk被生成的时候<br/>一个chunk被生成的时候，大约有1/10的几率会生成动物<br/>这个chunk中生成的动物会是同一类型<br/>而且这个生成动物是与地图种子有关的<br/>也就是说，同样的种子生成的同一个坐标处的chunk<br/>总是会生成同样的动物<br/>PS 这种刷动物是无视刷怪上限的<br/>动物的刷怪上限为11，非常低<br/>但是你在探索新地图的时候总是会有动物<br/>不会受到刷怪上限的影响<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21305_0.jpg'></img></div>
+            <div class="post_floor">21305楼</div>
+            <div class="post_time">2013-08-20 12:38</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>自然，第一种途径只会在新生成的chunk中刷动物<br/>当然不是我们想要，无法自动化<br/>第二种途径就是类似刷怪一样<br/>动物也会参照刷怪机制一样刷出<br/>基本要求比刷怪稍微苛刻一点<br/>只能在草方块上刷，亮度要大于9，要在正确的biome<br/>PS 正确的biome就用自己的常识判断吧<br/>ocean和desert不会刷动物<br/>taiga和forest除了普通动物还会刷狼<br/>plain中会刷马，mushroomisland中只会刷蘑菇牛<br/>注意，第二种刷怪途径中，必须是在草方块上刷出<br/>也就是说，蘑菇岛上也只有草方块上才会通过第二种途径刷蘑菇牛<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21308_0.jpg'></img></div>
+            <div class="post_floor">21308楼</div>
+            <div class="post_time">2013-08-20 12:45</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>但是为什么大家平时没有看到自己身边刷过动物呢<br/>有三个原因，第一个就是因为刷怪上限<br/>动物的刷怪常数在代码中被定为10<br/>如此计算的话，刷怪上限就是10*17*17/256=11<br/>对比普通怪物的79来说实在是太低了<br/>而玩家周围经常会有chunk生成时刷出的动物<br/>所以经常动物的上限都被超过了<br/>自然也无法刷出<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21311_0.jpg'></img></div>
+            <div class="post_floor">21311楼</div>
+            <div class="post_time">2013-08-20 12:53</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而第二个原因则是由于动物不会despawn<br/>由于怪物会despawn，即使到了刷怪上限<br/>离得远的怪物就会despawn，给刷怪上限腾出空间<br/>但是由于动物不会despawn，一旦到达了刷怪上限<br/>除非动物死亡，否则都不会再进行下一轮刷动物<br/>尤其值得注意的是，spawn chunks里面的动物也被算到刷怪上限中<br/>而spawn chunks中自然动物会有一大堆（至少大部分世界都是）<br/>所以更加导致了平时根本没有见过动物被刷出的情况<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21312_0.jpg'></img></div>
+            <div class="post_floor">21312楼</div>
+            <div class="post_time">2013-08-20 12:56</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而最后一个原因则要跑到源码里面看了<br/>这一行的findchunksforspawning就是进行刷怪的外层代码了<br/>注意到最后一个参数是决定是否进行刷动物的<br/>而这个参数只有在world total time是400的倍数时才会为true<br/>这个world total time是这个世界总计运行的game ticks数量<br/>也就是说，刷动物严格地每400个game tick才进行一次<br/>400个game tick则是20秒的时间<br/>所以说即使前两个原因都被解决了<br/>刷动物也是每20秒才会进行一次<br/>PS 对比之下，刷怪和刷章鱼则是每秒进行20次<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21313_0.jpg'></img></div>
+            <div class="post_floor">21313楼</div>
+            <div class="post_time">2013-08-20 13:02</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>分析完为什么不刷动物的3个原因<br/>那么我们就要来一个一个解决了<br/>首先要处理的是spawn chunks周围的动物<br/>spawn chunks里面的动物不被清理掉的话<br/>无论走到哪里都会积累在上限里面<br/>但是spawn chunks周围多少内的动物会被计算在上限中呢<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21318_0.jpg'></img></div>
+            <div class="post_floor">21318楼</div>
+            <div class="post_time">2013-08-20 13:12</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>我们知道spawn point周围17x17是inactive加载<br/>自然大家就认为是把17x17的动物都杀掉就可以了<br/>但是实际上并不是这样<br/>写了一个mod在其他世界进行了测试之后<br/>发现实际上是23x23范围内的动物都会算入上限中<br/>PS 任何地方都找不到这个数据的资料<br/>结果是23x23，实在让人惊讶<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21320_0.jpg'></img></div>
+            <div class="post_floor">21320楼</div>
+            <div class="post_time">2013-08-20 13:18</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>spawn point的chunk坐标是(-9,14)<br/>那么要处理的范围就是(-21,2)到(3,26)<br/>很不幸的是，这个农场在范围中<br/>里面所有的羊和牛估计都得转移了<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21326_0.jpg'></img></div>
+            <div class="post_floor">21326楼</div>
+            <div class="post_time">2013-08-20 13:22</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>既然要带领动物移位，就顺便尝试一下1.6的新东西吧<br/>绳子<br/>PS 史莱姆球的第二个用处。。。<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21329_0.jpg'></img></div>
+            <div class="post_floor">21329楼</div>
+            <div class="post_time">2013-08-20 13:24</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>相信大家都已经把玩过绳子很久了<br/>带领动物当然是最赞的一个用途了<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21330_0.jpg'></img></div>
+            <div class="post_floor">21330楼</div>
+            <div class="post_time">2013-08-20 13:28</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>先让羊群们临时栖息在这个地方<br/>这里是(-22,21)，在覆盖范围之外<br/>等到以后再把整个农场给迁移过去<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21331_0.jpg'></img></div>
+            <div class="post_floor">21331楼</div>
+            <div class="post_time">2013-08-20 13:30</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>现在仍然在转移羊群中<br/>可能会花不少时间<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21336_0.jpg'></img></div>
+            <div class="post_floor">21336楼</div>
+            <div class="post_time">2013-08-20 13:36</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>应该是有16种颜色的羊<br/>实际上最后发现居然有19只<br/>应该有几个颜色重复了 = =<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21343_0.jpg'></img></div>
+            <div class="post_floor">21343楼</div>
+            <div class="post_time">2013-08-20 13:49</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>当然蘑菇牛也要引出来<br/>这几只花了我好长时间才带回家的<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21344_0.jpg'></img></div>
+            <div class="post_floor">21344楼</div>
+            <div class="post_time">2013-08-20 13:50</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>全部动物都带走了<br/>接下来可以开始清理spawn chunks中全部动物的行动了<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21345_0.jpg'></img></div>
+            <div class="post_floor">21345楼</div>
+            <div class="post_time">2013-08-20 13:52</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>杀动物自然少不了looting的剑了<br/>上次附魔的时候突发奇想附魔一把石剑看看<br/>结果就出了一个很不错的附魔<br/>正好可以拿来杀动物<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21347_0.jpg'></img></div>
+            <div class="post_floor">21347楼</div>
+            <div class="post_time">2013-08-20 13:54</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>当然，以防耐久用完，再带上一把lootingIII的铁剑<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21348_0.jpg'></img></div>
+            <div class="post_floor">21348楼</div>
+            <div class="post_time">2013-08-20 13:54</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>有了怪物塔之后食物来源就不缺了<br/>先从这些牛开始下手吧！<br/>牛排！<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21349_0.jpg'></img></div>
+            <div class="post_floor">21349楼</div>
+            <div class="post_time">2013-08-20 13:55</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>牛排！<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21350_0.jpg'></img></div>
+            <div class="post_floor">21350楼</div>
+            <div class="post_time">2013-08-20 13:56</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>清空了的农场空空如也<br/>这个农场应该是我直播贴里面的第一个工程了<br/>不过搬迁近在咫尺<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21351_0.jpg'></img></div>
+            <div class="post_floor">21351楼</div>
+            <div class="post_time">2013-08-20 13:57</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>不过在出发之前，我们考虑一下，23x23的范围内动物都会被杀死<br/>也就是说中间会有一些区域的动物数量为0<br/>那么就会开始刷动物，导致前功尽弃<br/>那么该怎么办呢，自然就得随身带着点动物了<br/>狼/狗也被算在动物中，因此随身带上11只狗是很不错的选择<br/>PS 自然，以后狗窝也得搬迁了<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21352_0.jpg'></img></div>
+            <div class="post_floor">21352楼</div>
+            <div class="post_time">2013-08-20 13:59</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>狗窝是很久以前的东西了<br/>一键招呼功能一直都没有用过，直到现在 = =<br/>不过不管怎么说，总算是派上用场了<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21354_0.jpg'></img></div>
+            <div class="post_floor">21354楼</div>
+            <div class="post_time">2013-08-20 14:03</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>喂了腐肉，清点了一下，正好11只狗<br/>准备出发吧！<br/>从(-21,2)到(3,26)<br/>把全部动物都杀光！<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21357_0.jpg'></img></div>
+            <div class="post_floor">21357楼</div>
+            <div class="post_time">2013-08-20 14:06</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这里就是我们的起点了！<br/>开始清理动物！<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21361_0.jpg'></img></div>
+            <div class="post_floor">21361楼</div>
+            <div class="post_time">2013-08-20 14:13</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>我的路线是在z=3的地方，x从3走到-21<br/>然后清理这周围的动物<br/>下一次就在z=5的地方，x从-21走到3<br/>然后就这样一直下去<br/>很快就可以把全部的动物清理完了<br/>预计耗时在1个小时左右<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21363_0.jpg'></img></div>
+            <div class="post_floor">21363楼</div>
+            <div class="post_time">2013-08-20 14:15</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>清理完z=3这条路线了，现在走z=5<br/>收获不少<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21364_0.jpg'></img></div>
+            <div class="post_floor">21364楼</div>
+            <div class="post_time">2013-08-20 14:20</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>带领这么多狗现在有什么感想呢<br/>其实最大感想就是噪音很大<br/>在录周年庆视频的时候把狗的所有叫声文件都删掉了<br/>突然觉得世界很清静！<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21366_0.jpg'></img></div>
+            <div class="post_floor">21366楼</div>
+            <div class="post_time">2013-08-20 14:22</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>z=9的路线了，继续推进<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21368_0.jpg'></img></div>
+            <div class="post_floor">21368楼</div>
+            <div class="post_time">2013-08-20 14:28</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>开始z=13，剑的耐久快跪了<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21371_0.jpg'></img></div>
+            <div class="post_floor">21371楼</div>
+            <div class="post_time">2013-08-20 14:36</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>顺便来说说1.7吧，最近开始听说1.7的事情了<br/>不过第一个预览版似乎还没出来<br/>估计mojang会让162停留很长一段时间<br/>而1.7会修复光照系统中的这种阴影BUG<br/> <br/>——来自 MCLive
+<br/><img src='img/266_21377_0.jpg'></img></div>
+            <div class="post_floor">21377楼</div>
+            <div class="post_time">2013-08-20 14:48</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="265.html">上一页</a>
+        <a href='261.html'>261</a><a href='262.html'>262</a><a href='263.html'>263</a><a href='264.html'>264</a><a href='265.html'>265</a>
+        <a href="#">266</a>
+        <a href='266.html'>266</a><a href='267.html'>267</a><a href='268.html'>268</a><a href='269.html'>269</a><a href='270.html'>270</a><a href='271.html'>271</a>
+        <a href="267.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>

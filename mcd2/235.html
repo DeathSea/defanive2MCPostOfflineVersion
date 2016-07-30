@@ -1,0 +1,603 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="234.html">上一页</a>
+        <a href='230.html'>230</a><a href='231.html'>231</a><a href='232.html'>232</a><a href='233.html'>233</a><a href='234.html'>234</a>
+        <a href="#">235</a>
+        <a href='235.html'>235</a><a href='236.html'>236</a><a href='237.html'>237</a><a href='238.html'>238</a><a href='239.html'>239</a><a href='240.html'>240</a>
+        <a href="236.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>要节省材料的情况下做到长周期脉冲<br/>一个简单的办法就是使用公倍数+与门电路<br/>例如图中，左边是周期18，右边周期10<br/>我们可以注意到，只有到了180tick的时候<br/>左边和右边才会同时亮起<br/>因此这样我们就把两个周期的长度乘积起来<br/>得到了一个长脉冲<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16638_0.jpg'></img></div>
+            <div class="post_floor">16638楼</div>
+            <div class="post_time">2013-05-19 09:46</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>上一楼讲错了，应该是90tick的时候会同时亮起<br/>也就是半周期90的钟，即是周期180的钟<br/>具体电路要怎么实现呢<br/>把两个小脉冲的输出加上一个信号缩短器+非门<br/>这样两个小脉冲平时输出都是ON<br/>当一个周期过去之后就变成OFF，持续2tick<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16640_0.jpg'></img></div>
+            <div class="post_floor">16640楼</div>
+            <div class="post_time">2013-05-19 09:48</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最后把两个脉冲的信号都连接到一个红石火把上<br/>这样这个红石火把就是周期180脉冲的输出了<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16641_0.jpg'></img></div>
+            <div class="post_floor">16641楼</div>
+            <div class="post_time">2013-05-19 09:50</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>整个电路很简单<br/>周期180脉冲如果用普通方法需要23个中继器<br/>如图只需要5个中继器即可<br/>节省了很多材料<br/>如果时钟周期更大，会节省更多的材料<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16642_0.jpg'></img></div>
+            <div class="post_floor">16642楼</div>
+            <div class="post_time">2013-05-19 09:52</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来我们来进行一个简单的应用<br/>做出一个周期1分钟的脉冲<br/>1分钟也就是600tick，半周期也就是300tick<br/>质因数分解300=2x2x3x5x5<br/>然后我们分组为2x2x3和5x5<br/>注意，同种因数必须在同一组内，因此不能分为2x2x5和3x5<br/>也就是需要半周期分别为12和25的小脉冲<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16646_0.jpg'></img></div>
+            <div class="post_floor">16646楼</div>
+            <div class="post_time">2013-05-19 09:56</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>因此我们把左侧的脉冲改为半周期12<br/>也就是2个4tick的中继器+1个3tick的中继器<br/>再加上红石火把的1tick延迟<br/>这样左边就是半周期12的脉冲了<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16647_0.jpg'></img></div>
+            <div class="post_floor">16647楼</div>
+            <div class="post_time">2013-05-19 09:58</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>右侧则需要做成半周期25的脉冲<br/>同理，6个4tick中继器，再加火把的1tick<br/>这样就做成了半周期25的脉冲了<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16648_0.jpg'></img></div>
+            <div class="post_floor">16648楼</div>
+            <div class="post_time">2013-05-19 09:59</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>于是整个1分钟的脉冲就完成了<br/>打开拉杆之后，下方的红石火把每1分钟就会发出一次信号<br/>这个电路使用了11个中继器<br/>而如果用普通的脉冲设计，则需要75个中继器<br/>节省了85%的中继器耗资<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16649_0.jpg'></img></div>
+            <div class="post_floor">16649楼</div>
+            <div class="post_time">2013-05-19 10:01</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来我们再来更极端的应用<br/>我们来做一个周期1小时的脉冲<br/>半周期就是60*60*10/2=18000tick<br/>分解得18000=2x2x2x2x3x3x5x5x5<br/>分组为2x2x2x2x3x3和5x5x5，也就是144和125<br/>因此我们把两边做成半周期144和125的脉冲就可以了<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16652_0.jpg'></img></div>
+            <div class="post_floor">16652楼</div>
+            <div class="post_time">2013-05-19 10:04</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>左右两边改成半周期144和125的脉冲之后<br/>这个电路就是周期1小时的脉冲电路了<br/>这里使用了69个中继器<br/>而如果用普通设计的话，则需要4500个中继器<br/>节省了98.5%的中继器耗资<br/>因此这种电路效率是非常高的<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16653_0.jpg'></img></div>
+            <div class="post_floor">16653楼</div>
+            <div class="post_time">2013-05-19 10:13</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>今天直播就到这里吧<br/>很简单讲解一下电路而已<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16654_0.jpg'></img></div>
+            <div class="post_floor">16654楼</div>
+            <div class="post_time">2013-05-19 10:15</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>没错，第三集的UHC已经发布了！<br/>由于大家网络不好，这一集一直被推迟到现在，不过总算是发出来了！<br/>
+<br/><a href='http://tieba.baidu.com/p/2316311751'>http://tieba.baidu.com/p/2316311751</a>
+<br/></div>
+            <div class="post_floor">16705楼</div>
+            <div class="post_time">2013-05-22 00:01</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>早上又考完了2科的期末考<br/>明天最后再考1科就放假了！<br/>今天来玩玩MC吧<br/>And... Read more books!<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16706_0.jpg'></img></div>
+            <div class="post_floor">16706楼</div>
+            <div class="post_time">2013-05-22 00:04</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>其实昨天也有在玩MC的，不过没有直播<br/>不知道这张图大家有没有看到什么不同之处呢？<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16707_0.jpg'></img></div>
+            <div class="post_floor">16707楼</div>
+            <div class="post_time">2013-05-22 00:06</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>没错，加了1个MOD，SpawnInfo！<br/>什么，没听过这个MOD？！<br/>当然没听过啦，因为这个MOD是我昨天才写的<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16709_0.jpg'></img></div>
+            <div class="post_floor">16709楼</div>
+            <div class="post_time">2013-05-22 00:07</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>当然啦，这里只是借用这个生存世界演示一下效果而已<br/>演示完之后就会把这个MOD删掉，恢复到原版<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16710_0.jpg'></img></div>
+            <div class="post_floor">16710楼</div>
+            <div class="post_time">2013-05-22 00:10</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这个MOD是做什么的呢，其实是个辅助性MOD<br/>在F3的debug界面会显示刷怪范围内的怪物数量<br/>同时也加了一个/spawnarea [y0 y1]指令<br/>这个指令会计算刷怪范围内y=y0到y=y1的全部刷怪面积<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16711_0.jpg'></img></div>
+            <div class="post_floor">16711楼</div>
+            <div class="post_time">2013-05-22 00:13</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>现在在晚上，使用/spawnarea 0 128<br/>则会计算主角为中心的17x17个chunk中<br/>y=0到128的所有可刷怪的面积<br/>这里可以看到是77526<br/>也就是说17x17个chunk中y=0到128的范围内<br/>有77526个方块可以刷怪<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16712_0.jpg'></img></div>
+            <div class="post_floor">16712楼</div>
+            <div class="post_time">2013-05-22 00:16</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>做这个MOD的目的是什么呢？<br/>如果大家还记得的话，这个神速刷怪塔是我在1.3建造的<br/>但是似乎1.4更新之后效率下降了很多<br/>前几天终于找到原因了<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16714_0.jpg'></img></div>
+            <div class="post_floor">16714楼</div>
+            <div class="post_time">2013-05-22 00:19</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最主要的问题就是似乎刷怪上限被下降了很多<br/>仔细查了一下代码，刷怪和怪物数量统计范围都是17x17个chunk<br/>但是despawn的范围只在内存中的chunk内进行<br/>也就是15x15个chunk<br/>这样的话，最外围的一圈chunk刷出的怪就不会despawn<br/>但是又被统计在了怪物数量里面<br/>因此怪物会缓慢堆积在周围的一圈chunk里面<br/>导致不再进行刷怪<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16715_0.jpg'></img></div>
+            <div class="post_floor">16715楼</div>
+            <div class="post_time">2013-05-22 00:22</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>如果大家有仔细看上一幅图的话<br/>可以看到总共有79个怪物，但是只有40个在塔内<br/>因此剩余39个全部都是堆积在外围一圈的<br/>这一幅图我把游戏调成了和平<br/>可以看到，虽然和平了但是仍然有39个怪物！<br/>这些怪物都在外围一圈的chunk里面，不在内存里<br/>因此没有被和平模式despawn掉<br/>这些怪物也就是影响我们效率的怪物<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16716_0.jpg'></img></div>
+            <div class="post_floor">16716楼</div>
+            <div class="post_time">2013-05-22 00:24</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>要解决这个问题，办法就是出海航行<br/>一旦外围的chunk被加载之后<br/>怪物由于在128格之外就会马上消失<br/>因此绕着刷怪塔跑一圈就可以做到清理其他怪物<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16717_0.jpg'></img></div>
+            <div class="post_floor">16717楼</div>
+            <div class="post_time">2013-05-22 00:37</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>周围跑了几圈之后怪物数量已经降到12了<br/>这12只怪在哪里我也不清楚。。<br/>有可能在spawn chunk里面<br/>总之这是解决问题的一个办法<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16718_0.jpg'></img></div>
+            <div class="post_floor">16718楼</div>
+            <div class="post_time">2013-05-22 00:38</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>到spawn chunk走过一趟之后<br/>所有的怪物都被清理掉了<br/>现在就可以最高效率的利用这个刷怪塔了<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16719_0.jpg'></img></div>
+            <div class="post_floor">16719楼</div>
+            <div class="post_time">2013-05-22 00:45</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>现在关闭和平的话，可以看到全部的怪物都刷在塔内了<br/>而且刷怪上限仍然是79个<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16720_0.jpg'></img></div>
+            <div class="post_floor">16720楼</div>
+            <div class="post_time">2013-05-22 00:46</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>密密麻麻的怪<br/>自从1.3之后就很久没有这种感觉了<br/>现在效率终于回来了！<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16721_0.jpg'></img></div>
+            <div class="post_floor">16721楼</div>
+            <div class="post_time">2013-05-22 00:47</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>感觉非常爽！<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16722_0.jpg'></img></div>
+            <div class="post_floor">16722楼</div>
+            <div class="post_time">2013-05-22 00:48</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>刷出的大批怪物<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16723_0.jpg'></img></div>
+            <div class="post_floor">16723楼</div>
+            <div class="post_time">2013-05-22 00:48</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这么一会的成果<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16724_0.jpg'></img></div>
+            <div class="post_floor">16724楼</div>
+            <div class="post_time">2013-05-22 00:49</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>有没有很怀念这个速度<br/>1.3时这个刷怪塔是物资的主要来源<br/> <br/>——来自 MCLive
+<br/><img src='img/235_16725_0.jpg'></img></div>
+            <div class="post_floor">16725楼</div>
+            <div class="post_time">2013-05-22 00:50</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="234.html">上一页</a>
+        <a href='230.html'>230</a><a href='231.html'>231</a><a href='232.html'>232</a><a href='233.html'>233</a><a href='234.html'>234</a>
+        <a href="#">235</a>
+        <a href='235.html'>235</a><a href='236.html'>236</a><a href='237.html'>237</a><a href='238.html'>238</a><a href='239.html'>239</a><a href='240.html'>240</a>
+        <a href="236.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>

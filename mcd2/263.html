@@ -1,0 +1,608 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="262.html">上一页</a>
+        <a href='258.html'>258</a><a href='259.html'>259</a><a href='260.html'>260</a><a href='261.html'>261</a><a href='262.html'>262</a>
+        <a href="#">263</a>
+        <a href='263.html'>263</a><a href='264.html'>264</a><a href='265.html'>265</a><a href='266.html'>266</a><a href='267.html'>267</a><a href='268.html'>268</a>
+        <a href="264.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>Panda4994利用inactive loaded chunk做了一个和平模式按钮<br/>一旦按下按钮之后整个世界都会变成和平模式<br/>当在很远的一个未加载chunk中积累了80个怪物之后<br/>通过特定方法不远离怪物卸载掉这些chunk<br/>例如通过死亡，或者通过地狱门传送<br/>那么这个未加载的chunk里面就会有80只怪物<br/>接下来通过产生更新吧这个chunk进行inactive加载<br/>那么这80只怪物就会积累到刷怪上限，不再刷怪<br/>PS 为什么是inactive而不能是active呢<br/>因为inactive加载不会对entity产生更新<br/>因此这些怪物就不会消失，继续积累在上限中<br/>而active加载则会对entity产生更新，使怪物消失<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20524_0.jpg'></img></div>
+            <div class="post_floor">20524楼</div>
+            <div class="post_time">2013-08-03 10:59</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>有了chunk loader之后，各种神奇应用层出不穷<br/>不过在这里值得提醒的一点是<br/>由于chunk的卸载必须是玩家离开一个chunk才进行<br/>因此理论上来说，只要玩家不断的进行inactive加载chunk<br/>而不靠近/远离这些chunk<br/>那么这些chunk就会永远留在内存里<br/>直到你退出游戏/切换世界<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20526_0.jpg'></img></div>
+            <div class="post_floor">20526楼</div>
+            <div class="post_time">2013-08-03 11:02</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>虽然说这样一个inactive loaded chunk永远留在内存里<br/>不过只是inactive的留在内存里面<br/>因为这个chunk除了被动的接受方块更新以外<br/>不会进行任何的游戏代码<br/>但是如果说通过加载5x5的inactive loaded chunks<br/>那么这个中心的active loaded chunk不但永远留在内存里<br/>而且会执行所有的游戏代码，包括红石电路，entity更新等<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20529_0.jpg'></img></div>
+            <div class="post_floor">20529楼</div>
+            <div class="post_time">2013-08-03 11:06</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>不少服务器都是24/7运行的，而且很少重启<br/>如果有玩家通过这样的方法不断的加载chunk<br/>尤其是不断的加载active loaded chunk<br/>那么服务器的内存自然越来越少，后果大家可想而知<br/>注意，即使禁了红石也可以用其他方法加载chunk<br/>只需要提供一个跨越长距离的方块更新就可以了<br/>如图这样布置牌子也可以加载chunk，使用水流也可以加载<br/>要想防住是非常困难的<br/>也希望大家不要利用这一点进行任何攻击服务器的行动<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20531_0.jpg'></img></div>
+            <div class="post_floor">20531楼</div>
+            <div class="post_time">2013-08-03 11:11</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>刚刚的也就是普通的chunk loader了<br/>SimplySarc还发现了一个更加方便的chunk loader<br/>但是适用范围确比较有限<br/>通过从地狱往通往主世界的地狱门扔物品<br/>会导致主世界对应坐标为中心的13x13个chunk被inactive加载<br/>自然中间的9x9个chunk就被active加载了<br/>不过这个时长只有1分钟<br/>1分钟后主世界的这些chunk都会被卸载<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20533_0.jpg'></img></div>
+            <div class="post_floor">20533楼</div>
+            <div class="post_time">2013-08-03 11:14</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>要突破这1分钟的时间限制也很简单<br/>由于这1分钟限制是地狱门方块的scheduled update产生的<br/>那么只要不让地狱门方块接受到这个update即可<br/>如何防止这个地狱门方块接受呢？<br/>很简单，把地狱的这个chunk给卸载了就可以了<br/>因此只需要从这个地狱门走远了<br/>或者从另外一个地狱门出去<br/>或者以某种方式死亡<br/>那么这个地狱门方块就不会接受到1分钟的更新了<br/>自然主世界的那堆chunk就被无限制的加载了<br/>PS 这个chunk loader的缺点在于自动化比较困难<br/>但是操作非常简易<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20536_0.jpg'></img></div>
+            <div class="post_floor">20536楼</div>
+            <div class="post_time">2013-08-03 11:18</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>看到了这些chunk loader的视频<br/>自然也就想运用到我生存世界里面了<br/>于是想到的第一个就是spawn chunks下的一个工程<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20537_0.jpg'></img></div>
+            <div class="post_floor">20537楼</div>
+            <div class="post_time">2013-08-03 11:22</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>如果大家还记得的话<br/>这就是被废弃了的无限黑曜石机<br/>当时是想利用spawn chunks总是运行的特点<br/>在spawn chunks中造一个脉冲<br/>并把信号一直引到遗迹<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20538_0.jpg'></img></div>
+            <div class="post_floor">20538楼</div>
+            <div class="post_time">2013-08-03 11:24</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>当然，1.5.2的时候chunk的加载/卸载还是有区别<br/>当时失败了，因为152的时候方块更新不会导致chunk被加载<br/>也就是说，红石电路只能在被加载的chunk中运行<br/>没被加载的chunk自然也就无法生效<br/>不过现在有了1.6.2的新chunk机制之后<br/>这个脉冲电路终于正常工作了<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20539_0.jpg'></img></div>
+            <div class="post_floor">20539楼</div>
+            <div class="post_time">2013-08-03 11:26</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>这个就是脉冲的最后输出了<br/>不过现在162的chunk机制之后<br/>也不需要这样来强制加载这个chunk了<br/>只需要在这里做一个chunk loader即可<br/>PS 因此最后这个工程所用的红石还是废弃了。。<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20543_0.jpg'></img></div>
+            <div class="post_floor">20543楼</div>
+            <div class="post_time">2013-08-03 11:36</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来我们就带上所需要的东西<br/>把这个无限黑曜石机完成把<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20544_0.jpg'></img></div>
+            <div class="post_floor">20544楼</div>
+            <div class="post_time">2013-08-03 11:40</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>有了chunk loader的知识之后<br/>现在的无限黑曜石机就是这么简单<br/>一个脉冲连接到投掷器<br/>投掷器不断投物品进入传送门<br/>而传送门会把END里面的黑曜石平台刷新<br/>因此就可以无限刷黑曜石了<br/>只不过还有最关键的一步<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20550_0.jpg'></img></div>
+            <div class="post_floor">20550楼</div>
+            <div class="post_time">2013-08-03 11:47</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>最关键的一步就是要把这个chunk给active loaded<br/>这样红石电路才会正常工作<br/>而且更重要的是，这样发射出来的物品entity才会接受到更新<br/>这样物品才能进入到END传送门<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20551_0.jpg'></img></div>
+            <div class="post_floor">20551楼</div>
+            <div class="post_time">2013-08-03 11:48</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而实现的方法很简单<br/>我们不使用5x5 inactive的方法进行active加载<br/>我们使用地狱门传送物品的方法进行加载<br/>鉴于已经建好地狱门了，这个方法比较方便<br/>缺点在于，每次使用需要手动启动<br/>不过由于这个东西使用频率不高<br/>因此我们这样就很方便的完成了active加载了<br/>接下来的任务就是要在1分钟内跑到另外一个传送门<br/>这样那些chunk就会被永久加载了<br/>直到游戏重启<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20552_0.jpg'></img></div>
+            <div class="post_floor">20552楼</div>
+            <div class="post_time">2013-08-03 11:51</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>来到了另外一个遗迹的传送门<br/>进去之后，应该可以看到黑曜石平台上不断的有泥土被传送过来<br/>而黑曜石平台也可以不断刷新<br/>达到无限刷黑曜石的目的<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20554_0.jpg'></img></div>
+            <div class="post_floor">20554楼</div>
+            <div class="post_time">2013-08-03 11:53</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>到了END之后仍然留有僵尸工程的水流<br/>不过每过一个电路周期水流都会被删除<br/>因为物品传送过来的时候黑曜石平台会被重置<br/>同理5x5x4范围内的所有方块都会被重置<br/>非常奇特的一个效果<br/>同时，此时就可以无限制的挖黑曜石了<br/>只要发射器里面的物品还没用完<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20556_0.jpg'></img></div>
+            <div class="post_floor">20556楼</div>
+            <div class="post_time">2013-08-03 11:55</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>简单的刷黑曜石ing，只是演示效果<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20557_0.jpg'></img></div>
+            <div class="post_floor">20557楼</div>
+            <div class="post_time">2013-08-03 11:56</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>本来还想演示黑曜石平台被重置的<br/>但是可惜的是64个物品以及被发射完了<br/>所以就无法进行重置了<br/>要做到持续刷下去的话，只需要增加投掷器中的物品数量即可<br/>同时，挖一个黑曜石也需要很长时间<br/>因此我们也可以加长脉冲周期<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20559_0.jpg'></img></div>
+            <div class="post_floor">20559楼</div>
+            <div class="post_time">2013-08-03 11:58</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>总之，又一个小工程又完成了<br/>以后可能会考虑正式的把这里做一个可以刷黑曜石的出入口<br/>不过鉴于使用次数不多，因此会在以后没事做的时候再进行改进<br/>不论怎么说，今天就直播到这里了！<br/>大家晚安！<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20560_0.jpg'></img></div>
+            <div class="post_floor">20560楼</div>
+            <div class="post_time">2013-08-03 12:00</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>上一次找茬的结果是南瓜头的朝向<br/>虽然说野外生成的南瓜可以有随机朝向<br/>但是种出来的南瓜总是会朝向f=0的<br/>也就是说，这张图中的南瓜都是我自己放上去的<br/>如果没看错的话，<font style='color:blue'>@李凯文1190</font>
+<br/> 是第一个猜到的！<br/> <br/>——来自 MCLive
+<br/><img src='img/263_20562_0.jpg'></img></div>
+            <div class="post_floor">20562楼</div>
+            <div class="post_time">2013-08-03 12:05</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>前天有了一个想法，昨天在创造做了一天终于做好了<br/>今天在生存里非直播的情况下做了好久，终于把这个装置做到生存里了<br/>接下来上一个预告视频：原版单机生存中实现瞬移装置<br/>
+<br/><embed type="application/x-shockwave-flash" class="BDE_Flash" src="http://v.youku.com/v_show/id_XNTkxODk3OTY4.html" width="500" height="450" scale="noborder" allowscriptaccess="never" menu="false" loop="loop" play="true" womode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" allowfullscreen="true" flashvars="playMovie=true&amp;auto=1&amp;adss=0&amp;isAutoPlay=false" style="visibility: visible; display: block;">
+<br/><br/>视频来自：
+<br/><a href='http://v.youku.com/v_show/id_XNTkxODk3OTY4.html'>优酷</a>
+<br/>
+<br/><br/>这个视频没有展示出电路重置的过程，需要3秒进行手动重置<br/>明天如果有时间的话会进行这个装置的详细创造讲解</div>
+            <div class="post_floor">20632楼</div>
+            <div class="post_time">2013-08-05 13:30</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>昨天的瞬间传送装置做完之后，又有了另外一个想法<br/>保护伞传送装置<br/>今天下午在创造设计出来之后在生存里又花了不少时间做出来了<br/>非常的稳定，对这个设计非常满意<br/>具体作用就是，在野外、矿洞、或者任意位置，遇到危险的时候<br/>放置一个预置好的方块，就可以实现瞬移到家里，逃离危险<br/>下面是一个保护伞的展示视频<br/>
+<br/><embed type="application/x-shockwave-flash" class="BDE_Flash" src="http://v.youku.com/v_show/id_XNTkyMzgwMDA0.html" width="500" height="450" scale="noborder" allowscriptaccess="never" menu="false" loop="loop" play="true" womode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" allowfullscreen="true" flashvars="playMovie=true&amp;auto=1&amp;adss=0&amp;isAutoPlay=false" style="visibility: visible; display: block;">
+<br/><br/>视频来自：
+<br/><a href='http://v.youku.com/v_show/id_XNTkyMzgwMDA0.html'>优酷</a>
+<br/>
+<br/><br/>上一个视频发布的时候有人问到这些装置是不是原创的<br/>是的，昨天的瞬移和今天的保护伞两个装置<br/>都是全世界内（至少我所知的）首个实现的，而且具有如此易用性的<br/>个人对这两个装置的设计和制造都非常满意<br/>是生存世界中继刷怪塔、树场之后的最满意的机器了</div>
+            <div class="post_floor">20680楼</div>
+            <div class="post_time">2013-08-06 15:03</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>做了2个瞬移的视频，本来说是要直播讲解原理的<br/>不过会是非常长的一次直播，估计会搞得很晚才会睡<br/>最近这几天都非常晚睡，决定要调回生物钟<br/>而且已经连续3天玩了超过5个小时的MC了<br/>所以说今天就暂时不直播了，来讲点别的东西吧<br/>PS 不是吊大家胃口，不想太晚睡而已 = =</div>
+            <div class="post_floor">20704楼</div>
+            <div class="post_time">2013-08-07 11:20</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>前一阵子周年庆了，作为庆祝，做了生存世界的游览视频<br/>
+<br/><a href='http://tieba.baidu.com/p/2503617211'>http://tieba.baidu.com/p/2503617211</a>
+<br/>
+<br/><br/>如果还没看过的话可以推荐去看一下<br/>虽然视频里的东西都在直播贴里面直播过<br/>但是看视频和看图片的感觉还是差很多的<br/>那么今天就顺便来讲讲这个视频的制作和内容上的一些小事吧</div>
+            <div class="post_floor">20705楼</div>
+            <div class="post_time">2013-08-07 11:23</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>7月中的时候就有了做一个视频的想法<br/>当时的想法是，把自己的存档作为服务器地图<br/>然后邀请喵服的一群人一起游览世界<br/>这样应该会有非常欢乐的气氛，同时也展示了这个世界一年来的成就<br/>不过大家都非常忙，很难凑齐一群人一起录视频，最后也没录成<br/>到了米国之后，网络延迟更大了，就更加没办法录了<br/>于是这个初计划就这样废弃了。。</div>
+            <div class="post_floor">20708楼</div>
+            <div class="post_time">2013-08-07 11:25</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接着到了米国之后就开始陷入了“周年庆恐惧症”<br/>因为实在没办法想出什么好的庆祝方法<br/>毕竟也一周年了，总不能直播一个放烟花就算完事吧。。<br/>而且直播的时候估计送祝福的楼层会插满整个直播，大家看起来也不舒服<br/>正好在U2B上，etho的订阅者达到了100万，他也做了一个1mil sub的庆祝视频<br/>etho也在视频里面吐了一会苦水，想了几个星期也想不出要怎么庆祝<br/>然后突然就明白了，原来我不是一个人！我不是一个人！TAT。。</div>
+            <div class="post_floor">20710楼</div>
+            <div class="post_time">2013-08-07 11:29</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>后来到了周年庆的前一天了，还是没想出该怎么样<br/>然后在那天下午YY上，BJ时间还是凌晨，非常安静<br/>于是在和 <font style='color:blue'>@ztc囧儿</font>
+<br/> 和 <br/><font style='color:blue'>@sinew28</font>
+<br/> 聊天的时候抱怨了好久<br/>最后我就想，其实到现在这个直播贴的世界都没做过游览视频<br/>不过当时想，很多忠实观众都追直播贴这么久了<br/>很多世界里面的装置都已经非常清楚了<br/>这样再出一个视频，老观众们会不会非常失望？<br/>不过聪聪和新妞都一致认为这是一个非常不错的想法<br/>他们说，看图文和看视频毕竟还是感觉很不一样的<br/>而且看视频连贯性更好，对世界的了解会更加详细<br/>于是最后就确定下来录制一个world tour视频了，真是一个艰难的抉择啊 = =<br/>不过当时也没办法了，只有2天就周年庆了，再不做就来不及了</div>
+            <div class="post_floor">20715楼</div>
+            <div class="post_time">2013-08-07 11:35</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>于是就备份了一次存档，开始录视频了<br/>录了一阵子之后，录到刷铁机的时候就卡了好一会<br/>上去的梯子和沙柱早就拆了，要上去的话就要再搭上去<br/>然后下水路的时候又要扔眼睛瞬移下去<br/>而且过后要录小黑塔的时候总不能边录边搭桥吧<br/>想来想去发现生存录出来效果都不会很好<br/>于是就把存档复制了一份，然后把复制出来的存档改成创造<br/>于是最后就在创造模式下录了<br/>当时就觉得，录完之后肯定有很多没看过直播的朋友吐槽我“生存”世界<br/>不过个人觉得，大家能看到更好的视频效果，被吐槽一两句也没所谓吧 = =</div>
+            <div class="post_floor">20717楼</div>
+            <div class="post_time">2013-08-07 11:42</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>录视频的时候也发生了一些很好笑的事情<br/>调创造的方法是对局域网开放，然后打开作弊<br/>搞定了之后我就打了设置时间为正午，然后静止时间流动<br/>这样世界里总是正午，这样就不用整天打指令或者睡觉了<br/>做完之后就先退了世界备份了一下存档<br/>然后开始录的第一个部分就是日夜灯，然后顿时就发现永远都不会天黑了。。。<br/>再打指令的时候发现由于退过世界了，就不再有打指令的权限了。。<br/>于是非常不开心的再按了一次对局域网开放。。。</div>
+            <div class="post_floor">20719楼</div>
+            <div class="post_time">2013-08-07 11:44</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>在看房子首层的时候，本来也就是个喷泉也没什么好录的<br/>不过在看最后一眼的时候想起有很多人说我楼梯下的箱子打不开<br/>于是我顿时就去右键了一下那个箱子，让大家都知道是可以打开的 = =<br/>把箱子界面关掉之后，我又觉得这样故意只看上面的箱子是不是太丧心病狂了<br/>于是我又打开了一下下面的箱子。。<br/>好吧。。。</div>
+            <div class="post_floor">20722楼</div>
+            <div class="post_time">2013-08-07 11:47</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="262.html">上一页</a>
+        <a href='258.html'>258</a><a href='259.html'>259</a><a href='260.html'>260</a><a href='261.html'>261</a><a href='262.html'>262</a>
+        <a href="#">263</a>
+        <a href='263.html'>263</a><a href='264.html'>264</a><a href='265.html'>265</a><a href='266.html'>266</a><a href='267.html'>267</a><a href='268.html'>268</a>
+        <a href="264.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>

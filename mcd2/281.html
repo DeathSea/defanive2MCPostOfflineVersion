@@ -1,0 +1,602 @@
+
+<html>
+    <head>
+    <title>回复：直播，MC 1.3 原版生存</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="280.html">上一页</a>
+        <a href='276.html'>276</a><a href='277.html'>277</a><a href='278.html'>278</a><a href='279.html'>279</a><a href='280.html'>280</a>
+        <a href="#">281</a>
+        <a href='281.html'>281</a><a href='282.html'>282</a><a href='283.html'>283</a><a href='284.html'>284</a><a href='285.html'>285</a><a href='286.html'>286</a>
+        <a href="282.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    <div class="post_list">
+    
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>首先来分析一下电路的思路<br/>很明显只有当下级炼药台中的药水被取走后<br/>上级炼药台才可以把药水传送下去，进行下一步炼制<br/>因此电路结构将会是很明显的从下往上分步控制<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25134_0.jpg'></img></div>
+            <div class="post_floor">25134楼</div>
+            <div class="post_time">2014-01-12 21:06</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>那我们就可以根据下级炼药台里面的物品数量<br/>来进行对上级炼药台的控制<br/>当下级炼药台里面已经没有药水瓶之后<br/>就给出信号让上级的漏斗进行药水传送<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25135_0.jpg'></img></div>
+            <div class="post_floor">25135楼</div>
+            <div class="post_time">2014-01-12 21:08</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>当炼药台里面没有水瓶时，仍然会产生4格信号<br/>但是电路布置需求，我们需要在此时只产生2格信号<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25136_0.jpg'></img></div>
+            <div class="post_floor">25136楼</div>
+            <div class="post_time">2014-01-12 21:11</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>使用一个容器加上比较器产生一个2格的信号<br/>然后给到比较器并进行减法模式<br/>这样就从炼药台的信号里面减去了2格<br/>也就实现了我们需要的效果：<br/>当炼药台里面还有药瓶的时候，就有至少3格信号，阻止漏斗传送上级药瓶<br/>当炼药台里没有药瓶的时候，没有达到3格信号，上级漏斗开始传送<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25139_0.jpg'></img></div>
+            <div class="post_floor">25139楼</div>
+            <div class="post_time">2014-01-12 21:15</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>把这个结构重复建造几次之后就有了这个半自动炼药的电路了<br/>非常的简单易懂，并且易于使用<br/>PS 容器用的是熔炉，里面放4个小黑眼<br/>当然其他任何容器都可以用的，只要能产生2格信号就好了<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25141_0.jpg'></img></div>
+            <div class="post_floor">25141楼</div>
+            <div class="post_time">2014-01-12 21:16</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>起始开关也非常简单，一个木质按钮给到火把上即可<br/>当按钮按下时，火把熄灭，漏斗取出3个药瓶<br/>由于下级药瓶都空了，于是激发电路让上级开始传送药瓶<br/>上级空了，激发电路到再上级，一直进行到最上级为止<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25142_0.jpg'></img></div>
+            <div class="post_floor">25142楼</div>
+            <div class="post_time">2014-01-12 21:18</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>因此半自动炼药台就是这样了<br/>操作起来非常简单实用，要用时从箱子里面拿<br/>只要每次取时都按一下按钮，立刻就会炼制好3瓶<br/>按照我的日常药水消耗是完全没有鸭梨的<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25145_0.jpg'></img></div>
+            <div class="post_floor">25145楼</div>
+            <div class="post_time">2014-01-12 21:21</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>继续往地下室下一层走，树场V4也进行了一些修改<br/>主要的修改是把下方的检测装置更改了<br/>当长成之后，树干会产生信号给到底部的电路<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25148_0.jpg'></img></div>
+            <div class="post_floor">25148楼</div>
+            <div class="post_time">2014-01-12 21:24</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>并且更加实用的是，当树苗长成之后<br/>下面的活塞会把整个树干上推一格<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25149_0.jpg'></img></div>
+            <div class="post_floor">25149楼</div>
+            <div class="post_time">2014-01-12 21:25</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>上推一格的作用就是让树干处理掉了树干顶端的一块树叶<br/>这样砍树时就不再需要把钻石斧换成空手打树叶了<br/>虽然增加了1tick电路延迟，但是方便了砍伐<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25151_0.jpg'></img></div>
+            <div class="post_floor">25151楼</div>
+            <div class="post_time">2014-01-12 21:27</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>介绍完这段时间生存世界的改变<br/>今天的直播就到这里了！<br/>下次直播再见吧<br/>PS 1.8预览版好顶赞<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25152_0.jpg'></img></div>
+            <div class="post_floor">25152楼</div>
+            <div class="post_time">2014-01-12 21:33</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>为了和观众们交流一下想法，在每次直播结束后会回答这次直播前的一些观众的问题<br/>类似etho在U2B上的LP，每次结束后会选几条评论来讨论一下<br/>虽然说贴吧这个平台可以很简单的回复到大家<br/>但是有一些比较好玩的问题可以单独拿出来讲一讲<br/>大家可以问一些关于MC的问题，例如对于新预览版有什么看法<br/>或者一些其他游戏的问题，例如你喜欢玩XX游戏吗（说不定还真玩呢）<br/>再或者一些日常生活的问题，例如你最喜欢的颜色<br/>反正是作为一个直播的bonus，和大家交流一下<br/>既然本期大家还没有提过问题，那么我就来说说最喜欢的颜色吧<br/>虽然说我皮肤是红色的，但是我最喜欢的颜色不是红色<br/>而是royal blue，一种比较深的蓝色，大家可以百度一下图片，非常的漂亮<br/>（之所以不用在皮肤的衣服上是因为这样和裤子的颜色重了）<br/>反正就是这样啦，大家下次直播见</div>
+            <div class="post_floor">25156楼</div>
+            <div class="post_time">2014-01-12 21:48</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>今天比较无聊，我们来简单的一次直播吧<br/>Do not distribute指的是在用户协议里的不允许散布jar文件<br/>minecraft.jar就是整个MC的核心<br/>而且没有外加任何保护，直接暴露在正版玩家文件夹里面<br/>要盗版非常简单，直接把jar文件扔给大众即可<br/>所以说不允许散布jar是在用户协议里面<br/>只要你买了正版就同意了不进行jar文件的传播<br/>好吧废话不多说开播吧<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25277_0.jpg'></img></div>
+            <div class="post_floor">25277楼</div>
+            <div class="post_time">2014-01-15 15:08</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>今天做什么呢，进行一下刷怪塔的小修改<br/>同时也再讲一些关于刷怪的一些机制<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25278_0.jpg'></img></div>
+            <div class="post_floor">25278楼</div>
+            <div class="post_time">2014-01-15 15:14</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>如果大家还记得刷怪塔内部刷怪层构造的话<br/>肯定会记得内部的这些柱子<br/>作用是为了限制蜘蛛的刷出<br/>因为蜘蛛的hitbox是2x2的<br/>这样就可以保证刷怪层内没有任何连续的2x2空间<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25280_0.jpg'></img></div>
+            <div class="post_floor">25280楼</div>
+            <div class="post_time">2014-01-15 15:19</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>不过后来 <font style='color:blue'>@915986386</font>
+<br/> 告诉我蜘蛛需要3x3的空间才能刷出<br/>在刷怪的时候会在被选中的方块中心刷<br/>因此蜘蛛2x2的hitbox实际上会覆盖到3x3的范围<br/>所以说只要防止没有任何3x3的空间<br/>就可以保证不刷蜘蛛<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25282_0.jpg'></img></div>
+            <div class="post_floor">25282楼</div>
+            <div class="post_time">2014-01-15 15:21</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>所以对刷怪层进行修改可以减少柱子的数量<br/>自然也就加大了有效面积<br/>每层增加了20的可刷怪面积<br/>整个塔的效率肯定可以再提高一点<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25283_0.jpg'></img></div>
+            <div class="post_floor">25283楼</div>
+            <div class="post_time">2014-01-15 15:25</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而接下来一个问题有很多观众问过<br/>为什么小黑塔需要向下造楼梯到y=1再开始造呢<br/>不能直接往上开始造吗<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25285_0.jpg'></img></div>
+            <div class="post_floor">25285楼</div>
+            <div class="post_time">2014-01-15 15:44</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>小黑塔之所以往下建就与lc值有关了<br/>打开F3可以在f的下面一行见到lc值<br/>在图中我现在所在的地方lc值为79<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25287_0.jpg'></img></div>
+            <div class="post_floor">25287楼</div>
+            <div class="post_time">2014-01-15 15:49</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而lc值到底是什么意思呢<br/>lc值是这个chunk中最高所到达的section高度<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25288_0.jpg'></img></div>
+            <div class="post_floor">25288楼</div>
+            <div class="post_time">2014-01-15 15:51</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>好吧稍微有点复杂了，一步一步来讲<br/>一个section是什么呢，是在chunk里面的子结构<br/>一个chunk是16x16x256<br/>而一个chunk分成16个section，每个大小是16x16x16的立方体<br/>第一个section是在y=0到y=15，第二个在y=16到y=31<br/>地图内容也是分成一个一个section保存下来的<br/>而驱动作物生长的random tick也是分成一个一个section进行的<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25291_0.jpg'></img></div>
+            <div class="post_floor">25291楼</div>
+            <div class="post_time">2014-01-15 15:57</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>那么lc值就是这个chunk的y值最高的section的高度<br/>例如我现在所在的chunk最高只到y=16到y=31这个section<br/>那么lc值就显示的是31<br/>再例如，我再在y=107放一个方块<br/>而y=107是在y=96到y=111这个section<br/>所以lc值就会是111<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25292_0.jpg'></img></div>
+            <div class="post_floor">25292楼</div>
+            <div class="post_time">2014-01-15 15:59</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>而lc值在刷怪循环里面起什么作用呢？<br/>MC世界高度上限是256，但是大部分情况下3/4的高度都是空气<br/>所以MC在刷怪时只在y=0到y=lc值这个范围内刷<br/>由于lc值其实就是表示这个chunk里方块最高可以去到哪里<br/>所以说这个范围是包括了整个chunk的所有方块的<br/>而lc值是直接可以从存档文件里面读出来的<br/>这样可以减少很大的刷怪循环计算量<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25293_0.jpg'></img></div>
+            <div class="post_floor">25293楼</div>
+            <div class="post_time">2014-01-15 16:02</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>那么我们接下来就可以考虑到小黑塔的情况了<br/>如果小黑塔是从y=0开始建的，那么最高可以到y=127<br/>总共可以有27个刷怪层，而且lc值为127<br/>也就是说，刷怪循环会在y=0到127中进行<br/>那么选中这27个刷怪层的概率就为27/128<br/>而如果小黑塔是从y=128开始建到y=255的话<br/>那么lc值就为255了，刷怪循环会从y=0到255中进行<br/>同样数量的刷怪层，选中的概率就只有27/256<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25294_0.jpg'></img></div>
+            <div class="post_floor">25294楼</div>
+            <div class="post_time">2014-01-15 16:06</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>接下来我们来1.8预览版14w02c里面做一下lc值的测试<br/>之所以选择14w02c并不是因为lc值整个机制变化了<br/>只是因为在14w02c里面/kill命令可以接受参数并且有@e选择器<br/>这样可以很方便的设置好测试环境<br/>我们的测试目标是看不同的lc值会对刷怪塔效率产生多大的影响<br/>我模拟刷怪塔的方法是一个刷怪平台<br/>并且用命令方块/kill @e[type=XXX]来杀死刷出的怪物<br/>这样可以很方便的模拟了一个刷怪塔的工作情况<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25295_0.jpg'></img></div>
+            <div class="post_floor">25295楼</div>
+            <div class="post_time">2014-01-15 16:13</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>现在刷怪平台的y值是41，lc值是47<br/>那么我们现在来挂机3分钟，看看这个刷怪塔可以刷出多少物品<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25297_0.jpg'></img></div>
+            <div class="post_floor">25297楼</div>
+            <div class="post_time">2014-01-15 16:14</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>在lc值为48的时候挂机3分钟的结果<br/>收获了146个物品<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25298_0.jpg'></img></div>
+            <div class="post_floor">25298楼</div>
+            <div class="post_time">2014-01-15 16:19</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>那么接下来我造一个玻璃柱子到y=81<br/>那么这个玻璃柱子就会占到y=80到y=95这个section<br/>lc值就变成95了<br/>现在挂机3分钟看看成果<br/>理论上的话，产量只有之前的1/2<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25299_0.jpg'></img></div>
+            <div class="post_floor">25299楼</div>
+            <div class="post_time">2014-01-15 16:21</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>3分钟挂机完成，只收获了30个物品<br/>有点意外，可以看到lc值对刷怪效率的影响不是一般的大<br/>lc值翻倍却导致刷怪效率降了一半更多<br/>可以看到，为了达到更高的刷怪效率<br/>保持低lc值是非常重要的<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25301_0.jpg'></img></div>
+            <div class="post_floor">25301楼</div>
+            <div class="post_time">2014-01-15 16:27</div>
+        </div>
+    </div>
+
+    <div class="floor">
+        
+    <div class='author'>
+        <ul>
+            <li><img class="author_iron" src='img/iron.png' /></li>
+            <li>defanive2</li>
+            <li>无尽黑夜</li>
+            <li>14</li>
+        </ul>
+    </div>
+        <div class="post">
+            <div class="post_content">
+<br/>不过lc值在刷怪循环中也是可以有被利用的地方<br/>刷怪循环进行的时候是进行群体刷怪的<br/>意思是某一个空气方块被选中之后<br/>会随机在其41x41的范围内进行12次刷怪尝试<br/>99%的情况下会选中11x11范围内的其他方块进行刷<br/>也就是说，其他chunk的空气方块可以把怪刷到这个chunk里面<br/>即使其他chunk完全没有刷怪的有效面积<br/>也仍然给刷怪塔增加了效率<br/> <br/>——来自 MCLive
+<br/><img src='img/281_25306_0.jpg'></img></div>
+            <div class="post_floor">25306楼</div>
+            <div class="post_time">2014-01-15 16:43</div>
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="page">
+        <a href="1.html">首页</a>
+        <a href="280.html">上一页</a>
+        <a href='276.html'>276</a><a href='277.html'>277</a><a href='278.html'>278</a><a href='279.html'>279</a><a href='280.html'>280</a>
+        <a href="#">281</a>
+        <a href='281.html'>281</a><a href='282.html'>282</a><a href='283.html'>283</a><a href='284.html'>284</a><a href='285.html'>285</a><a href='286.html'>286</a>
+        <a href="282.html">下一页</a>
+        <a href="301.html">末页</a>
+    </div>
+    </body>
+</html>
