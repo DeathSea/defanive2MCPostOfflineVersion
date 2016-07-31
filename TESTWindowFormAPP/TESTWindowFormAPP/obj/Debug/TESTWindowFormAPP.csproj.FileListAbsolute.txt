@@ -1,0 +1,8 @@
+E:\visual Studio 2015\TESTWindowFormAPP\TESTWindowFormAPP\bin\Debug\TESTWindowFormAPP.exe.config
+E:\visual Studio 2015\TESTWindowFormAPP\TESTWindowFormAPP\bin\Debug\TESTWindowFormAPP.exe
+E:\visual Studio 2015\TESTWindowFormAPP\TESTWindowFormAPP\bin\Debug\TESTWindowFormAPP.pdb
+E:\visual Studio 2015\TESTWindowFormAPP\TESTWindowFormAPP\obj\Debug\TESTWindowFormAPP.Form1.resources
+E:\visual Studio 2015\TESTWindowFormAPP\TESTWindowFormAPP\obj\Debug\TESTWindowFormAPP.Properties.Resources.resources
+E:\visual Studio 2015\TESTWindowFormAPP\TESTWindowFormAPP\obj\Debug\TESTWindowFormAPP.csproj.GenerateResource.Cache
+E:\visual Studio 2015\TESTWindowFormAPP\TESTWindowFormAPP\obj\Debug\TESTWindowFormAPP.exe
+E:\visual Studio 2015\TESTWindowFormAPP\TESTWindowFormAPP\obj\Debug\TESTWindowFormAPP.pdb
